@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
+import { MapPin, Clock, Users, Phone } from 'lucide-react';
+
+const serviceAreas = [
+  {
+    id: "dallas-county",
+    name: "Dallas County",
+    population: "2.6M+",
+    towns: ["Dallas", "Irving", "Garland", "Mesquite", "Richardson", "Carrollton", "DeSoto", "Lancaster", "University Park", "Highland Park"],
+    businessTypes: ["Corporate Offices", "Healthcare", "Tech Companies", "Retail"],
+    responseTime: "24/7"
+  },
+  {
+    id: "tarrant-county",
+    name: "Tarrant County",
+    population: "2.2M+",
+    towns: ["Fort Worth", "Arlington", "Grand Prairie", "Mansfield", "Euless", "Bedford", "Hurst", "Grapevine", "Southlake", "Colleyville"],
+    businessTypes: ["Manufacturing", "Healthcare", "Corporate Offices", "Logistics"],
+    responseTime: "24/7"
+  },
+  {
+    id: "collin-county",
+    name: "Collin County",
+    population: "1.2M+",
+    towns: ["Plano", "Frisco", "McKinney", "Allen", "Wylie", "Murphy", "Lucas", "Fairview", "Parker", "Prosper"],
+    businessTypes: ["Tech Companies", "Corporate Parks", "Medical Centers", "Education"],
+    responseTime: "24/7"
+  },
+  {
+    id: "denton-county",
+    name: "Denton County",
+    population: "980K+",
+    towns: ["Denton", "Lewisville", "Flower Mound", "Coppell", "The Colony", "Little Elm", "Highland Village", "Lake Dallas", "Corinth", "Shallowwater"],
+    businessTypes: ["Education", "Healthcare", "Manufacturing", "Corporate"],
+    responseTime: "24/7"
+  }
+];
+---
+
+<Layout title="Service Areas | Dream Cleaned Services - Dallas Commercial Cleaning" description="Dream Cleaned Services provides commercial cleaning throughout Dallas-Fort Worth including Dallas County, Tarrant County, Collin County, and Denton County.">
+	<div class="min-h-screen">
+		<Header client:load />
+		
+		<!-- Hero Section -->
+		<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-brand-dark text-white overflow-hidden">
+			<!-- Background Elements -->
+			<div class="absolute inset-0 overflow-hidden">
+				<div class="absolute top-20 -right-20 w-80 h-80 bg-brand-gold/20 rounded-full opacity-50 blur-3xl"></div>
+				<div class="absolute bottom-10 -left-20 w-60 h-60 bg-brand-gold/30 rounded-full opacity-60 blur-3xl"></div>
+			</div>
+			
+			<div class="container relative mx-auto px-6 z-10">
+				<div class="max-w-4xl mx-auto text-center">
+					<div class="inline-block animate-fade-in">
+						<span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-white/10 text-brand-lightGold rounded-full">
+							Commercial Cleaning Service Areas
+						</span>
+					</div>
+					
+					<h1 class="mb-6 text-4xl md:text-6xl font-heading font-bold animate-fade-in text-balance">
+						Service Locations
+					</h1>
+					
+					<p class="text-lg md:text-xl text-white/80 mb-8 animate-fade-in delay-75 text-balance max-w-3xl mx-auto">
+						Dream Cleaned Services provides comprehensive commercial cleaning solutions throughout the Dallas-Fort Worth metroplex. 
+						Our strategically positioned teams ensure rapid response times and consistent service quality across all locations.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Service Areas Grid -->
+		<section class="py-20">
+			<div class="container mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">
+						Dallas-Fort Worth Metro Areas
+					</h2>
+					<p class="text-muted-foreground max-w-2xl mx-auto">
+						We serve businesses across the major counties in the DFW metroplex, providing reliable commercial cleaning services to keep your workspace pristine.
+					</p>
+				</div>
+				
+				<div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+					{serviceAreas.map((area, index) => (
+						<div class="bg-white rounded-xl p-8 shadow-card hover:shadow-highlighted transition-all duration-300 fade-in-section">
+							<div class="flex items-start justify-between mb-6">
+								<div class="flex items-center">
+									<div class="h-12 w-12 rounded-full bg-brand-gold/20 flex items-center justify-center mr-4">
+										<MapPin className="h-6 w-6 text-brand-gold" />
+									</div>
+									<div>
+										<h3 class="text-xl font-semibold">{area.name}</h3>
+										<p class="text-muted-foreground text-sm">Population: {area.population}</p>
+									</div>
+								</div>
+								<div class="flex items-center text-sm text-brand-gold">
+									<Clock className="h-4 w-4 mr-1" />
+									{area.responseTime}
+								</div>
+							</div>
+							
+							<div class="mb-6">
+								<h4 class="font-medium mb-3">Cities & Towns Served:</h4>
+								<div class="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+									{area.towns.map((town) => (
+										<div class="flex items-center">
+											<div class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></div>
+											{town}
+										</div>
+									))}
+								</div>
+							</div>
+							
+							<div class="mb-6">
+								<h4 class="font-medium mb-3">Business Types:</h4>
+								<div class="flex flex-wrap gap-2">
+									{area.businessTypes.map((type) => (
+										<span class="px-3 py-1 bg-brand-cream text-brand-gold text-xs rounded-full">
+											{type}
+										</span>
+									))}
+								</div>
+							</div>
+							
+							<div class="flex items-center justify-between pt-4 border-t border-gray-100">
+								<div class="flex items-center text-sm text-muted-foreground">
+									<Users className="h-4 w-4 mr-1" />
+									Trusted by 100+ businesses
+								</div>
+								<a href="#contact" class="text-brand-gold font-medium text-sm hover:underline">
+									Get Quote
+								</a>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-20 bg-brand-cream/30">
+			<div class="container mx-auto px-6 text-center">
+				<div class="max-w-3xl mx-auto">
+					<h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">
+						Ready to Get Started?
+					</h2>
+					<p class="text-muted-foreground mb-8">
+						Contact us today to discuss your commercial cleaning needs. We'll provide a customized quote based on your location and requirements.
+					</p>
+					<div class="flex flex-col sm:flex-row justify-center gap-4">
+						<a href="tel:8179939993" class="inline-flex items-center px-8 py-3 bg-brand-gold text-white rounded-lg font-medium hover:bg-brand-gold/90 transition-colors">
+							<Phone className="h-5 w-5 mr-2" />
+							Call Now: 817-993-9993
+						</a>
+						<a href="/" class="inline-flex items-center px-8 py-3 border border-brand-gold text-brand-gold rounded-lg font-medium hover:bg-brand-gold hover:text-white transition-colors">
+							View All Services
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<Footer client:load />
+		<ScrollToTop client:load />
+	</div>
+</Layout>

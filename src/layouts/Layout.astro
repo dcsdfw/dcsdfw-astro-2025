@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Dream Cleaned Services offers professional commercial cleaning solutions in Dallas, TX. Our expert team delivers exceptional office cleaning, medical facility sanitization, and retail space maintenance." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="commercial cleaning, Dallas commercial cleaning, office cleaning services, medical facility cleaning, retail cleaning, professional cleaning services, Dream Cleaned Services" />
+		<meta name="author" content="Dream Cleaned Services" />
+
+		<!-- Open Graph Tags -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+		<meta property="og:url" content="https://dcsdfw.com" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@dreamcleaned" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		
+		<!-- Preload Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+		<script>
+			// Initialize fade-in animations on scroll
+			document.addEventListener('DOMContentLoaded', () => {
+				const fadeElements = document.querySelectorAll('.fade-in-section');
+				
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('is-visible');
+						}
+					});
+				}, { threshold: 0.1 });
+				
+				fadeElements.forEach(element => {
+					observer.observe(element);
+				});
+			});
+		</script>
+	</body>
+</html>
