@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className={cn(
       "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-      isScrolled ? "bg-white/90 shadow-subtle backdrop-blur-sm py-3" : "bg-transparent py-5"
+      isScrolled ? "bg-white shadow-subtle py-2.5" : "bg-white/95 backdrop-blur-sm py-3"
     )}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
@@ -28,7 +28,7 @@ export default function Header() {
             <img 
               src="/dream-cleaned-logo.jpg" 
               alt="Dream Cleaned Services - Professional Commercial Cleaning in Dallas" 
-              className="h-8 w-auto"
+              className="h-12 w-auto object-contain"
             />
           </a>
           
@@ -67,7 +67,7 @@ export default function Header() {
       
       {/* Mobile Menu */}
       <div className={cn(
-        "md:hidden fixed inset-0 bg-white z-40 pt-20 pb-6 px-6 overflow-y-auto transition-transform duration-300 ease-in-out",
+        "md:hidden fixed inset-0 bg-white z-40 pt-16 pb-6 px-6 overflow-y-auto transition-transform duration-300 ease-in-out shadow-lg",
         isMenuOpen ? "translate-x-0" : "translate-x-full"
       )}>
         <nav className="flex flex-col h-full">

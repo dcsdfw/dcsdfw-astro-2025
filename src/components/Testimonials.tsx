@@ -88,60 +88,66 @@ export default function Testimonials() {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-white rounded-2xl p-8 md:p-10 shadow-card">
-            <Quote className="absolute -top-6 -left-6 h-12 w-12 text-brand-gold/20" />
+          <div className="relative bg-white rounded-2xl p-8 md:p-12 shadow-card">
+            <Quote className="absolute -top-4 -left-4 h-16 w-16 text-brand-gold/10" />
             
             <div className={`transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
-              <div className="flex items-center mb-8">
-                <div className="w-14 h-14 rounded-full bg-brand-cream flex items-center justify-center mr-4">
-                  <span className="text-xl font-bold text-brand-gold">
-                    {testimonials[current].name.charAt(0)}
-                  </span>
+              <div className="flex items-start mb-8">
+                <div className="w-16 h-16 rounded-full bg-brand-gold flex items-center justify-center mr-4 text-white text-xl font-bold">
+                  {testimonials[current].name.split(' ').map(n => n[0]).join('')}
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg">{testimonials[current].name}</h3>
-                  <p className="text-muted-foreground">{testimonials[current].company}</p>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-xl text-gray-900">{testimonials[current].name}</h3>
+                  <div className="flex items-center justify-between">
+                    <p className="text-gray-600">{testimonials[current].company}</p>
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              <div className="flex mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-brand-gold fill-current" />
-                ))}
-              </div>
-              
-              <blockquote className="text-lg leading-relaxed text-muted-foreground mb-8">
+              <blockquote className="text-lg leading-relaxed text-gray-700 mb-8 italic">
                 "{testimonials[current].text}"
               </blockquote>
               
-              <div className="flex justify-between items-center">
-                <Button variant="outline" onClick={prev} className="border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white">
-                  <ArrowLeft className="h-4 w-4" />
-                </Button>
-                
-                <div className="flex space-x-2">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      className={`w-3 h-3 rounded-full transition-colors ${
-                        current === index ? 'bg-brand-gold' : 'bg-brand-gold/30'
-                      }`}
-                      onClick={() => {
-                        setVisible(false);
-                        setTimeout(() => {
-                          setCurrent(index);
-                          setVisible(true);
-                        }, 300);
-                      }}
-                    />
-                  ))}
-                </div>
-                
-                <Button variant="outline" onClick={next} className="border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white">
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </div>
+                                 <div className="flex justify-between items-center">
+                     <div className="flex space-x-2">
+                       {testimonials.map((_, index) => (
+                         <button
+                           key={index}
+                           className={`w-2 h-2 rounded-full transition-colors ${
+                             current === index ? 'bg-brand-gold' : 'bg-gray-300'
+                           }`}
+                           onClick={() => {
+                             setVisible(false);
+                             setTimeout(() => {
+                               setCurrent(index);
+                               setVisible(true);
+                             }, 300);
+                           }}
+                         />
+                       ))}
+                     </div>
+                     
+                     <div className="flex space-x-2">
+                       <Button variant="outline" onClick={prev} className="h-10 w-10 rounded-full flex items-center justify-center">
+                         <span className="text-lg">‹</span>
+                       </Button>
+                       <Button variant="outline" onClick={next} className="h-10 w-10 rounded-full flex items-center justify-center">
+                         <span className="text-lg">›</span>
+                       </Button>
+                     </div>
+                   </div>
             </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Button className="bg-brand-gold hover:bg-brand-gold/90 text-white px-8 py-3">
+              Join Our Satisfied Clients
+            </Button>
           </div>
         </div>
       </div>

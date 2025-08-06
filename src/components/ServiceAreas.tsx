@@ -64,14 +64,19 @@ export default function ServiceAreas() {
         </div>
         
         <div className={`transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          {/* Map placeholder - would be replaced with actual map */}
-          <div className={`h-96 bg-brand-gold/10 rounded-xl relative overflow-hidden mb-12 transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <MapPin className="h-16 w-16 text-brand-lightGold opacity-30" />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-              <p className="text-white text-center">Interactive Service Area Map</p>
-            </div>
+          {/* Interactive Google Maps Embed */}
+          <div className={`rounded-xl relative overflow-hidden mb-12 transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215366.72034611984!2d-97.21410278697009!3d32.49662250000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bf8861aec9e12ad%3A0x5cd9e3db68dea3ea!2sDream%20Cleaned!5e0!3m2!1sen!2sus!4v1708665998153!5m2!1sen!2sus" 
+              width="100%" 
+              height="450" 
+              style={{ border: 0 }}
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-xl"
+              title="Dream Cleaned Service Areas - Dallas Fort Worth"
+            />
           </div>
           
           <div className="text-center mb-12">
@@ -98,13 +103,23 @@ export default function ServiceAreas() {
                 
                 <div className="grid grid-cols-2 gap-3">
                   {county.towns.map((town, townIndex) => (
-                    <div key={townIndex} className="text-white/80 text-sm">
+                    <button 
+                      key={townIndex} 
+                      className="bg-white/5 text-white/90 text-sm px-4 py-3 rounded-lg border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200 text-left flex items-center"
+                    >
+                      <span className="w-2 h-2 bg-brand-gold rounded-full mr-3 flex-shrink-0"></span>
                       {town}
-                    </div>
+                    </button>
                   ))}
                 </div>
               </div>
             ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-white/70 text-lg max-w-3xl mx-auto">
+              Don't see your city listed? Contact us to check if we service your area. We're constantly expanding our reach throughout the DFW metroplex counties.
+            </p>
           </div>
         </div>
       </div>

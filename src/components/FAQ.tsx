@@ -105,6 +105,20 @@ export default function FAQ() {
               </div>
             ))}
           </div>
+          
+          {/* Additional Questions Section */}
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 text-lg mb-4">
+              Have more questions about our commercial cleaning services?
+            </p>
+            <a 
+              href="#contact" 
+              className="text-brand-gold hover:text-brand-gold/80 transition-colors text-lg font-medium inline-flex items-center"
+            >
+              Contact our team for personalized answers
+              <ChevronDown className="ml-2 h-4 w-4" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -143,10 +143,12 @@ export default function Contact() {
           
           <div className={`md:col-span-3 transition-all duration-500 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <form onSubmit={handleSubmit} className="bg-white rounded-xl p-8 shadow-card">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Request a Free Quote</h3>
+              
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
+                    Your Name *
                   </label>
                   <input
                     type="text"
@@ -222,8 +224,10 @@ export default function Contact() {
                 >
                   <option value="">Select a service</option>
                   <option value="office">Office Cleaning</option>
-                  <option value="medical">Medical Facility Cleaning</option>
                   <option value="retail">Retail Cleaning</option>
+                  <option value="daycare">Daycare Facilities</option>
+                  <option value="medical">Medical Facilities</option>
+                  <option value="religious">Religious Facilities</option>
                   <option value="other">Other</option>
                 </select>
               </div>
