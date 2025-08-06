@@ -25,9 +25,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-brand-dark">
-                Dream<span className="text-brand-gold">Cleaned</span>
-              </span>
+            <img 
+              src="/dream-cleaned-logo.jpg" 
+              alt="Dream Cleaned Services - Professional Commercial Cleaning in Dallas" 
+              className="h-8 w-auto"
+            />
           </a>
           
           {/* Desktop Navigation */}
