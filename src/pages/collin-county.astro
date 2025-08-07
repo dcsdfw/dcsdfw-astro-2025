@@ -1,0 +1,357 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
+import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
+
+const collinCities = [
+  "Plano", "Frisco", "McKinney", "Allen", "Wylie", "Celina", "Prosper", 
+  "Princeton", "Anna", "Melissa", "Murphy", "Fairview"
+];
+---
+
+<Layout title="Collin County Commercial Cleaning | Dream Cleaned Services" description="Professional commercial cleaning services throughout Collin County. Serving Plano, McKinney, Allen, Frisco and all surrounding cities.">
+  <div class="min-h-screen">
+    <Header client:load />
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-brand-cream/20">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Collin County Commercial Cleaning
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Professional cleaning services for businesses throughout Collin County
+          </p>
+          <div class="flex items-center justify-center space-x-6 text-gray-600">
+            <div class="flex items-center">
+              <Clock className="h-5 w-5 mr-2" />
+              <span>Same Day Response</span>
+            </div>
+            <div class="flex items-center">
+              <CheckCircle className="h-5 w-5 mr-2" />
+              <span>Licensed & Insured</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Collin County Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                Collin County's Premier Commercial Cleaning Service
+              </h2>
+              <p class="text-gray-700 mb-6">
+                Collin County is one of the fastest-growing counties in Texas, home to 
+                major corporations, tech companies, and thriving small businesses. Our 
+                team provides reliable cleaning services that help Collin County 
+                businesses maintain clean, professional environments.
+              </p>
+              <p class="text-gray-700 mb-6">
+                From the corporate headquarters in Plano to the growing tech sector in 
+                Frisco and McKinney, we understand the unique needs of Collin County 
+                businesses and deliver customized cleaning solutions.
+              </p>
+              <div class="bg-brand-gold/10 rounded-lg p-6">
+                <h3 class="font-semibold text-gray-900 mb-3">Why Choose Dream Cleaned for Collin County?</h3>
+                <ul class="text-gray-700 space-y-2">
+                  <li class="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Local team familiar with Collin County regulations</span>
+                  </li>
+                  <li class="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Flexible scheduling for busy Collin businesses</span>
+                  </li>
+                  <li class="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Emergency cleaning services available</span>
+                  </li>
+                  <li class="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Competitive pricing for Collin County market</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">Collin County Quick Facts</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <MapPin className="h-5 w-5 text-brand-gold mr-3" />
+                  <div>
+                    <p class="font-semibold text-gray-900">County Seat</p>
+                    <p class="text-gray-600">McKinney</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <Users className="h-5 w-5 text-brand-gold mr-3" />
+                  <div>
+                    <p class="font-semibold text-gray-900">Population</p>
+                    <p class="text-gray-600">1.1+ Million</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3" />
+                  <div>
+                    <p class="font-semibold text-gray-900">Major Industries</p>
+                    <p class="text-gray-600">Technology, Finance, Healthcare, Retail</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <Clock className="h-5 w-5 text-brand-gold mr-3" />
+                  <div>
+                    <p class="font-semibold text-gray-900">Service Response</p>
+                    <p class="text-gray-600">Same Day</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Commercial Cleaning Services in Collin County
+            </h2>
+            <p class="text-xl text-gray-600">
+              Comprehensive cleaning solutions for all types of businesses
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Office Cleaning</h3>
+              <p class="text-gray-700 mb-4">
+                Professional office cleaning services for corporate headquarters, 
+                small businesses, and everything in between throughout Collin County.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly cleaning schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Conference rooms and common areas</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Kitchen and break room cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom sanitization</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Medical Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Specialized cleaning for medical offices, clinics, and healthcare 
+                facilities throughout Collin County.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>HIPAA-compliant cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Exam room and equipment sanitization</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Waiting area and reception cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Medical waste disposal coordination</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Religious Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Respectful and thorough cleaning for churches, synagogues, mosques, 
+                and other religious facilities throughout Collin County.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Sanctuary and worship area cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Fellowship hall and kitchen cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Classroom and office area maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom and common area sanitization</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Daycare Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Safe, thorough cleaning for childcare centers and daycare 
+                facilities in Collin County.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Child-safe cleaning products</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Play area and classroom cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Kitchen and dining area sanitization</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom and diaper changing areas</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Retail Cleaning</h3>
+              <p class="text-gray-700 mb-4">
+                Keep your retail space spotless and welcoming for customers 
+                in Collin County's competitive retail market.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Sales floor cleaning and maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Fitting room and restroom cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Display case and fixture cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Entrance and window cleaning</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Government Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Professional cleaning services for government buildings, courthouses, 
+                and municipal facilities throughout Collin County.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Secure facility cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Courtroom and office cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Public lobby and waiting area maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Background-checked cleaning staff</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cities and Towns Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Collin County Cities & Towns We Serve
+            </h2>
+            <p class="text-xl text-gray-600">
+              Professional commercial cleaning services available throughout Collin County
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {collinCities.map((city) => (
+              <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center">
+                  <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                  <h4 class="font-semibold text-gray-900 text-base">{city}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div class="text-center mt-12">
+            <p class="text-gray-600 mb-6">
+              Don't see your city listed? Contact us to check if we service your area.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-brand-cream/30">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Ready to Experience the Dream Cleaned Difference?
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            Join hundreds of satisfied Collin County businesses who trust us with their cleaning needs.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              Call (817) 993-9993
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:load />
+    <ScrollToTop client:load />
+  </div>
+</Layout>
