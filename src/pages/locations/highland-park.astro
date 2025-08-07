@@ -1,0 +1,286 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
+---
+
+<Layout title="Highland Park Commercial Cleaning Services | Dream Cleaned">
+	<div class="min-h-screen">
+		<Header client:load />
+		<main>
+			<!-- Hero Section -->
+			<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+				{/* Hero Background Image */}
+				<div class="absolute inset-0">
+					<img 
+						src="/highland-park-luxury.jpg" 
+						alt="Highland Park commercial cleaning services" 
+						class="w-full h-full object-cover"
+					/>
+					<div class="absolute inset-0 bg-white/80"></div>
+				</div>
+				
+				{/* Background Elements */}
+				<div class="absolute inset-0 overflow-hidden">
+					<div class="absolute top-20 -right-20 w-80 h-80 bg-brand-gold/20 rounded-full opacity-50 blur-3xl"></div>
+					<div class="absolute bottom-10 -left-20 w-60 h-60 bg-brand-gold/30 rounded-full opacity-60 blur-3xl"></div>
+				</div>
+				
+				<div class="container relative mx-auto px-6 z-10">
+					<div class="max-w-3xl mx-auto text-center">
+						<div class="inline-block animate-fade-in">
+							<span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-brand-cream text-brand-gold rounded-full">
+								Highland Park Commercial Cleaning Experts
+							</span>
+						</div>
+						
+						<h1 class="mb-6 font-heading font-bold animate-fade-in text-balance text-4xl md:text-5xl text-gray-900">
+							Professional <span class="text-brand-gold">Commercial Cleaning</span> Services in Highland Park, TX
+						</h1>
+						
+						<p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
+							From office buildings to retail spaces, we keep your Highland Park workspace pristine and welcoming.
+						</p>
+						
+						<div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
+							<a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+								Get Your Free Quote
+							</a>
+							<a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+								Call Now: (817) 993-9993
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Business Environment & Why Choose Section -->
+			<section class="py-16">
+				<div class="container mx-auto px-6">
+					<div class="grid md:grid-cols-2 gap-8">
+						<div>
+							<h2 class="text-3xl font-bold text-gray-900 mb-6">
+								Highland Park's Trusted Commercial Cleaning Experts
+							</h2>
+							<p class="text-base text-gray-700 mb-6">
+								Highland Park, known for its luxury retail district and upscale residential areas, demands exceptional attention to detail in commercial cleaning. Our team understands the unique needs of Highland Park businesses, from high-end boutiques to prestigious professional offices.
+							</p>
+							<p class="text-base text-gray-700 mb-6">
+								We provide comprehensive cleaning services tailored to Highland Park's sophisticated business environment, ensuring every workspace reflects the community's commitment to excellence and luxury standards.
+							</p>
+							<p class="text-base text-gray-700">
+								Our local expertise combined with premium cleaning protocols makes us the preferred choice for Highland Park businesses seeking impeccable, thorough, and professional cleaning services.
+							</p>
+						</div>
+						
+						<div class="bg-white p-6 pb-8 rounded-lg shadow-lg border-l-4 border-brand-gold self-start">
+							<h3 class="text-lg font-semibold text-gray-900 mb-4">Why Highland Park Businesses Choose<br>Dream Cleaned</h3>
+							<div class="space-y-3">
+								<div class="flex items-center p-3 bg-gray-50 rounded-lg">
+									<CheckCircle className="h-5 w-5 text-brand-gold mr-3 flex-shrink-0" />
+									<span class="text-gray-700">Local Highland Park expertise</span>
+								</div>
+								<div class="flex items-center p-3 bg-gray-50 rounded-lg">
+									<CheckCircle className="h-5 w-5 text-brand-gold mr-3 flex-shrink-0" />
+									<span class="text-gray-700">Luxury-grade cleaning standards</span>
+								</div>
+								<div class="flex items-center p-3 bg-gray-50 rounded-lg">
+									<CheckCircle className="h-5 w-5 text-brand-gold mr-3 flex-shrink-0" />
+									<span class="text-gray-700">Premium eco-friendly products</span>
+								</div>
+								<div class="flex items-center p-3 bg-gray-50 rounded-lg">
+									<CheckCircle className="h-5 w-5 text-brand-gold mr-3 flex-shrink-0" />
+									<span class="text-gray-700">Bonded and insured</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Coverage Areas -->
+			<section class="py-16 bg-gray-50">
+				<div class="container mx-auto px-6">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-900 mb-6">
+							Highland Park Coverage Areas
+						</h2>
+						<p class="text-lg text-gray-700 mb-12">
+							We provide comprehensive cleaning services throughout Highland Park and surrounding areas:
+						</p>
+						<div class="grid md:grid-cols-3 gap-6">
+							<div class="bg-white p-6 rounded-lg shadow-md">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Highland Park Village</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>• Luxury retail stores</li>
+									<li>• High-end boutiques</li>
+									<li>• Fine dining establishments</li>
+									<li>• Professional offices</li>
+								</ul>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Knox-Henderson Area</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>• Specialty retail shops</li>
+									<li>• Medical facilities</li>
+									<li>• Financial institutions</li>
+									<li>• Professional services</li>
+								</ul>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Oak Lawn Corridor</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>• Upscale businesses</li>
+									<li>• Professional offices</li>
+									<li>• Medical practices</li>
+									<li>• Specialty services</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Climate Impact -->
+			<section class="py-16">
+				<div class="container mx-auto px-6">
+					<div class="max-w-4xl mx-auto">
+						<h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+							Highland Park's Climate & Cleaning Considerations
+						</h2>
+						<div class="grid md:grid-cols-2 gap-8">
+							<div>
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Seasonal Challenges</h3>
+								<p class="text-gray-700 mb-4">
+									Highland Park's humid subtropical climate presents unique cleaning challenges. Our specialized approach addresses:
+								</p>
+								<ul class="space-y-2 text-gray-700">
+									<li>• High humidity management</li>
+									<li>• Pollen and allergen control</li>
+									<li>• Seasonal weather adaptation</li>
+									<li>• Indoor air quality maintenance</li>
+								</ul>
+							</div>
+							<div>
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Our Solutions</h3>
+								<p class="text-gray-700 mb-4">
+									We implement climate-specific cleaning protocols to ensure optimal results year-round:
+								</p>
+								<ul class="space-y-2 text-gray-700">
+									<li>• Humidity-resistant cleaning methods</li>
+									<li>• HEPA filtration systems</li>
+									<li>• Climate-appropriate products</li>
+									<li>• Preventive maintenance programs</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services -->
+			<section class="py-16 bg-brand-dark text-white">
+				<div class="container mx-auto px-6">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold mb-6">
+							Comprehensive Highland Park Cleaning Services
+						</h2>
+						<p class="text-xl text-white/90 mb-12">
+							From daily maintenance to deep cleaning, we provide all the services Highland Park businesses need to maintain pristine workspaces.
+						</p>
+						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Luxury Retail Cleaning</h3>
+								<p class="text-white/80">
+									Specialized cleaning for high-end retail spaces, display areas, and luxury environments.
+								</p>
+							</div>
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Office Cleaning</h3>
+								<p class="text-white/80">
+									Comprehensive office cleaning including workstations, common areas, and restrooms.
+								</p>
+							</div>
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Medical Facility Cleaning</h3>
+								<p class="text-white/80">
+									Healthcare-grade cleaning protocols for medical offices and healthcare facilities.
+								</p>
+							</div>
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Floor Care</h3>
+								<p class="text-white/80">
+									Professional floor maintenance including carpet cleaning and hard surface care.
+								</p>
+							</div>
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Window Cleaning</h3>
+								<p class="text-white/80">
+									Interior and exterior window cleaning for clear, professional appearances.
+								</p>
+							</div>
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Specialized Services</h3>
+								<p class="text-white/80">
+									Custom cleaning solutions for unique Highland Park business requirements.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Emergency Services -->
+			<section class="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
+				<div class="container mx-auto px-6">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold mb-6">
+							24/7 Emergency Cleaning Services
+						</h2>
+						<p class="text-xl text-white/90 mb-8">
+							When unexpected cleaning emergencies arise in Highland Park, we're here to help. Available 24/7 for urgent cleaning needs.
+						</p>
+						<div class="grid md:grid-cols-2 gap-6">
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">Emergency Response</h3>
+								<p class="text-white/80">
+									Rapid response cleaning services for accidents, spills, and unexpected messes.
+								</p>
+							</div>
+							<div class="bg-white/10 p-6 rounded-lg">
+								<h3 class="text-xl font-semibold mb-4">After-Hours Service</h3>
+								<p class="text-white/80">
+									Flexible scheduling for businesses that need cleaning outside regular hours.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section class="py-16 bg-gray-50">
+				<div class="container mx-auto px-6">
+					<div class="max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl font-bold text-gray-900 mb-6">
+							Ready to Experience Highland Park's Premier Cleaning Service?
+						</h2>
+						<p class="text-lg text-gray-700 mb-8">
+							Contact us today for a free consultation and customized cleaning plan for your Highland Park business.
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4 justify-center">
+							<a href="tel:8179939993" class="bg-brand-gold text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+								Call 817-993-9993
+							</a>
+							<a href="mailto:hello@dcsdfw.com" class="bg-brand-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-dark/90 transition-colors">
+								Email Us
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer client:load />
+	</div>
+</Layout> 

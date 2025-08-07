@@ -1,0 +1,386 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ScrollToTop from '../../components/ScrollToTop';
+import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
+---
+
+<Layout title="Lancaster Commercial Cleaning | Dream Cleaned Services" description="Professional commercial cleaning services in Lancaster, TX. Serving offices, retail, medical facilities, and industrial properties throughout Lancaster and surrounding areas.">
+  <div class="min-h-screen">
+    <Header client:load />
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      {/* Hero Background Image */}
+      <div class="absolute inset-0">
+        <img 
+          src="/lancaster-downtown.jpg" 
+          alt="Lancaster commercial cleaning services" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/80"></div>
+      </div>
+      
+      {/* Background Elements */}
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-20 -right-20 w-80 h-80 bg-brand-gold/20 rounded-full opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-10 -left-20 w-60 h-60 bg-brand-gold/30 rounded-full opacity-60 blur-3xl"></div>
+      </div>
+      
+      <div class="container relative mx-auto px-6 z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-block animate-fade-in">
+            <span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-brand-cream text-brand-gold rounded-full">
+              Lancaster Commercial Cleaning Experts
+            </span>
+          </div>
+          
+          <h1 class="mb-6 font-heading font-bold animate-fade-in text-balance text-4xl md:text-5xl text-gray-900">
+            Professional <span class="text-brand-gold">Commercial Cleaning</span> Services in Lancaster, TX
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
+            From office buildings to retail spaces, we keep your Lancaster workspace pristine and welcoming.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              Call Now: (817) 993-9993
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lancaster Business Environment -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Lancaster's Trusted Commercial Cleaning Experts
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <p class="text-base text-gray-700 mb-6">
+                Lancaster, a growing suburb with a rich history and strong business community, 
+                offers diverse commercial opportunities. From the bustling retail areas to the 
+                expanding industrial sectors, your business environment reflects Lancaster's 
+                commitment to economic development and community growth.
+              </p>
+              <p class="text-base text-gray-700 mb-6">
+                Dream Cleaned understands the unique cleaning challenges of Lancaster businesses. 
+                Whether you're in the retail sector, manufacturing, or professional services, we 
+                provide tailored cleaning solutions that maintain the high standards your customers 
+                and employees expect in this dynamic city.
+              </p>
+            </div>
+            <div class="bg-white p-6 pb-8 rounded-lg shadow-lg border-l-4 border-brand-gold self-start">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Why Lancaster Businesses Choose<br>Dream Cleaned</h3>
+              <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Experience with diverse business environments</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Knowledge of Lancaster's business districts</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Flexible scheduling for all business types</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Bonded & insured for your protection</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lancaster Coverage Areas -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Emergency Coverage Throughout Lancaster
+          </h2>
+          <p class="text-xl text-gray-600 mb-12 text-center">
+            Our cleaning teams cover every corner of Lancaster and surrounding areas
+          </p>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Downtown Lancaster</h4>
+              <p class="text-gray-600 text-sm">Historic district and government offices</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">I-35E Corridor</h4>
+              <p class="text-gray-600 text-sm">Major retail and commercial district</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">US-67 Corridor</h4>
+              <p class="text-gray-600 text-sm">Industrial and manufacturing facilities</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">North Lancaster</h4>
+              <p class="text-gray-600 text-sm">Residential and commercial mix</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">South Lancaster</h4>
+              <p class="text-gray-600 text-sm">Retail and service businesses</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">East Lancaster</h4>
+              <p class="text-gray-600 text-sm">Manufacturing and industrial parks</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">West Lancaster</h4>
+              <p class="text-gray-600 text-sm">Professional offices and retail</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Central Lancaster</h4>
+              <p class="text-gray-600 text-sm">Mixed-use development areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Lancaster Medical District</h4>
+              <p class="text-gray-600 text-sm">Healthcare and medical facilities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lancaster Climate Impact -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Lancaster's Climate Impact on Cleaning Needs
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Summer Heat (May-September)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Extreme temperatures exceeding 100°F</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>High humidity levels affecting indoor air quality</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Increased dust and pollen accumulation</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>More frequent HVAC system maintenance needs</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Winter Conditions (December-February)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Cold snaps and occasional ice storms</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Salt and debris tracking from parking areas</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Reduced natural ventilation needs</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Heating system maintenance requirements</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lancaster Services -->
+    <section class="py-16" style="background-color: #faf8f4;">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Commercial Cleaning Services in Lancaster
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Customized Service Plans</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Flexible scheduling options</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Specialized cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Monthly service reports</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>24/7 emergency support</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Office & Retail Cleaning</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Conference rooms and common areas</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Kitchen and break room cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom sanitization</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Industrial & Manufacturing</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Production floor cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Equipment and machinery cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Warehouse and storage areas</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Safety compliance cleaning</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lancaster Emergency Services -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Emergency Cleaning Services in Lancaster
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">24/7 Emergency Response</h3>
+              <p class="text-gray-700 mb-4">
+                When unexpected cleaning emergencies occur in Lancaster, our team is ready 
+                to respond quickly. We understand that business interruptions can be costly, 
+                which is why we offer rapid response cleaning services.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Same-day emergency cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Water damage restoration</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Fire and smoke damage cleanup</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Biohazard and trauma cleanup</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Preventive Maintenance</h3>
+              <p class="text-gray-700 mb-4">
+                Regular cleaning maintenance helps prevent emergencies and keeps your Lancaster 
+                business running smoothly. Our preventive programs are designed to address potential 
+                issues before they become problems.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Scheduled maintenance cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Equipment and system inspections</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Preventive cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Regular quality assessments</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lancaster Contact Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Ready to Get Started in Lancaster?
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            Contact us today for a free consultation and quote for your Lancaster business
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+14692600000" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              <Clock className="h-5 w-5 mr-2" />
+              Call Now: (469) 260-0000
+            </a>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              <MapPin className="h-5 w-5 mr-2" />
+              Get Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:load />
+    <ScrollToTop client:load />
+  </div>
+</Layout> 

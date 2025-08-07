@@ -48,14 +48,20 @@ export default function Footer() {
           
           <div>
             <h4 className="text-lg font-semibold mb-6">Service Areas</h4>
-            <ul className="space-y-3 grid grid-cols-2">
-              <li><a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Dallas</a></li>
-              <li><a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Fort Worth</a></li>
-              <li><a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Plano</a></li>
-              <li><a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Irving</a></li>
-              <li><a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Arlington</a></li>
-              <li><a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Frisco</a></li>
-            </ul>
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-4">
+                <a href="/locations/dallas" className="text-white/70 hover:text-brand-lightGold transition-colors">Dallas</a>
+                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Fort Worth</a>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Plano</a>
+                <a href="/locations/irving" className="text-white/70 hover:text-brand-lightGold transition-colors">Irving</a>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Arlington</a>
+                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Frisco</a>
+              </div>
+            </div>
           </div>
           
           <div>
