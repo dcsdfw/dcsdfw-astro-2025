@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
-import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
+import { MapPin, Clock, Users, CheckCircle, Phone, Building, Car, ShoppingBag, Heart, GraduationCap, Church } from 'lucide-react';
 ---
 
 <Layout title="Commercial Cleaning Services Irving TX | Dream Cleaned">
@@ -15,8 +15,8 @@ import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
       {/* Hero Background Image */}
       <div class="absolute inset-0">
         <img 
-          src="/about-hero.jpg" 
-          alt="Irving Las Colinas corporate cleaning services" 
+          src="/irving-convention-center.jpg" 
+          alt="Irving Convention Center commercial cleaning services" 
           class="w-full h-full object-cover"
         />
         <div class="absolute inset-0 bg-white/80"></div>
@@ -48,53 +48,161 @@ import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
             <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
               Get Your Free Quote
             </a>
-            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
-              Call Now: (817) 993-9993
-            </a>
+                          <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+                Call Now: (817) 993-9993
+              </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service Background -->
+    <!-- Irving Business Environment -->
     <section class="py-16">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Professional Commercial Cleaning in Irving
+            Irving's Trusted Commercial Cleaning Experts
           </h2>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
-              <p class="text-lg text-gray-700 mb-6">
+              <p class="text-base text-gray-700 mb-6">
                 Irving, home to the prestigious Las Colinas business district and numerous Fortune 500 headquarters, 
                 demands cleaning services that understand the high standards of corporate environments. 
                 From the gleaming towers of Las Colinas to the bustling corridors near DFW International Airport, 
                 your business environment reflects Irving's commitment to excellence and professionalism.
               </p>
-              <p class="text-lg text-gray-700 mb-6">
+              <p class="text-base text-gray-700 mb-6">
                 Dream Cleaned understands the unique cleaning challenges of Irving businesses. Whether you're in the 
                 corporate headquarters of Las Colinas, the retail areas of Irving Mall, or the industrial sectors, 
                 we provide tailored cleaning solutions that maintain the high standards your corporate clients expect.
               </p>
             </div>
-            <div class="bg-brand-cream/30 p-6 rounded-lg">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Why Irving Businesses Choose Dream Cleaned</h3>
-              <ul class="space-y-3 text-gray-700">
+            <div class="bg-white p-6 pb-8 rounded-lg shadow-lg border-l-4 border-brand-gold self-start">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Why Irving Businesses Choose<br>Dream Cleaned</h3>
+              <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Experience with corporate environments</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Knowledge of Las Colinas business district</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Flexible scheduling for corporate clients</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Bonded & insured for your protection</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Irving Coverage Areas -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Emergency Coverage Throughout Irving
+          </h2>
+          <p class="text-xl text-gray-600 mb-12 text-center">
+            Our cleaning teams cover every corner of Irving and surrounding areas
+          </p>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Las Colinas</h4>
+              <p class="text-gray-600 text-sm">Corporate headquarters and business district</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">DFW Airport Area</h4>
+              <p class="text-gray-600 text-sm">Aviation and logistics facilities</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Irving Mall District</h4>
+              <p class="text-gray-600 text-sm">Retail and entertainment centers</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">North Irving</h4>
+              <p class="text-gray-600 text-sm">Residential and commercial mix</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">South Irving</h4>
+              <p class="text-gray-600 text-sm">Industrial and manufacturing areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">East Irving</h4>
+              <p class="text-gray-600 text-sm">Professional offices and retail</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">West Irving</h4>
+              <p class="text-gray-600 text-sm">Mixed-use development areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Central Irving</h4>
+              <p class="text-gray-600 text-sm">Government and civic facilities</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Valley Ranch</h4>
+              <p class="text-gray-600 text-sm">Corporate campus and office parks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Irving Climate Impact -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Irving's Climate Impact on Cleaning Needs
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Summer Heat (May-September)</h3>
+              <ul class="space-y-2 text-gray-700">
                 <li class="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Experience with corporate environments</span>
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Extreme temperatures exceeding 100°F</span>
                 </li>
                 <li class="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Knowledge of Las Colinas business district</span>
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Increased corporate facility maintenance</span>
                 </li>
                 <li class="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Flexible scheduling for corporate clients</span>
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Air conditioning system maintenance</span>
                 </li>
                 <li class="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Bonded & insured for your protection</span>
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Enhanced sanitization protocols</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Winter Challenges (December-February)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Rapid temperature swings</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Corporate debris tracking</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Indoor air quality management</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Preventive maintenance schedules</span>
                 </li>
               </ul>
             </div>
@@ -103,8 +211,221 @@ import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
       </div>
     </section>
 
-    <!-- Emergency Response Section -->
+    <!-- Major Irving Service Locations -->
+    <section class="py-16" style="background-color: #faf8f4;">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Major Irving Service Locations
+          </h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Building className="h-5 w-5 text-brand-gold mr-2" />
+                Corporate & Office Centers
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Las Colinas corporate headquarters</li>
+                <li>Valley Ranch office parks</li>
+                <li>DFW Airport business district</li>
+                <li>Executive office buildings</li>
+                <li>Conference centers</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Heart className="h-5 w-5 text-brand-gold mr-2" />
+                Healthcare Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Medical office buildings</li>
+                <li>Dental offices and clinics</li>
+                <li>Specialty medical facilities</li>
+                <li>Healthcare administration</li>
+                <li>Medical equipment care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <ShoppingBag className="h-5 w-5 text-brand-gold mr-2" />
+                Retail & Entertainment
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Irving Mall</li>
+                <li>Las Colinas retail centers</li>
+                <li>Shopping districts</li>
+                <li>Entertainment venues</li>
+                <li>Restaurant facilities</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <GraduationCap className="h-5 w-5 text-brand-gold mr-2" />
+                Educational Institutions
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Irving ISD schools</li>
+                <li>University of Dallas</li>
+                <li>Private schools</li>
+                <li>Training centers</li>
+                <li>Corporate learning facilities</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Church className="h-5 w-5 text-brand-gold mr-2" />
+                Religious Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Community churches</li>
+                <li>Religious centers</li>
+                <li>Synagogues and mosques</li>
+                <li>Religious schools</li>
+                <li>Fellowship halls</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Car className="h-5 w-5 text-brand-gold mr-2" />
+                Government & Public
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Irving City Hall</li>
+                <li>Irving Municipal Court</li>
+                <li>Public libraries</li>
+                <li>Community centers</li>
+                <li>Public works facilities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Irving Cleaning Programs -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Irving Cleaning Programs
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Many Irving businesses depend on our comprehensive cleaning services
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Scheduled Cleaning Programs</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Priority emergency response</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Volume pricing discounts</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated cleaning teams</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Customized Service Plans</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Flexible scheduling options</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Specialized cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Monthly service reports</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>24/7 emergency support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Irving Cleaning Expertise -->
     <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Irving Cleaning Expertise
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Our cleaning teams understand Irving's unique business environments
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Corporate & Executive</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Executive office cleaning</li>
+                <li>• Corporate campus maintenance</li>
+                <li>• Conference room protocols</li>
+                <li>• Executive suite standards</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Medical & Healthcare</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Medical facility cleaning</li>
+                <li>• Hospital cleaning standards</li>
+                <li>• Dental office protocols</li>
+                <li>• Medical equipment care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Retail & Entertainment</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Shopping center maintenance</li>
+                <li>• Retail store cleaning</li>
+                <li>• Entertainment venue protocols</li>
+                <li>• Restaurant facility care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Educational & Religious</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• School facility cleaning</li>
+                <li>• Campus maintenance protocols</li>
+                <li>• Church and synagogue care</li>
+                <li>• Daycare facility standards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Response Section -->
+    <section class="py-16">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-bold text-gray-900 mb-6">
@@ -121,7 +442,7 @@ import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
             </div>
             <p class="text-gray-700 mb-6">
               Whether it's an unexpected event, emergency cleanup, or last-minute schedule changes, 
-              our Irving cleaning team is ready to respond quickly to keep your business running smoothly.
+              our Irving cleaning team is ready to respond quickly to keep our clients business running smoothly.
             </p>
             <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
               Get Your Free Quote
@@ -130,264 +451,6 @@ import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
         </div>
       </div>
     </section>
-
-    <!-- Services Section -->
-    <section class="py-16">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">
-              Commercial Cleaning Services in Irving
-            </h2>
-            <p class="text-xl text-gray-600">
-              Comprehensive cleaning solutions for all types of Irving businesses
-            </p>
-          </div>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Office Cleaning</h3>
-              <p class="text-gray-700 mb-4">
-                Professional office cleaning services for Irving corporate headquarters, 
-                small businesses, and everything in between throughout the Irving area.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Daily, weekly, or monthly cleaning schedules</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Conference rooms and common areas</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Kitchen and break room cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Restroom sanitization</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Medical Facilities</h3>
-              <p class="text-gray-700 mb-4">
-                Specialized cleaning for medical offices, clinics, and healthcare 
-                facilities throughout Irving.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>HIPAA-compliant cleaning protocols</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Exam room and equipment sanitization</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Waiting area and reception cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Medical waste disposal coordination</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Religious Facilities</h3>
-              <p class="text-gray-700 mb-4">
-                Respectful and thorough cleaning for churches, synagogues, mosques, 
-                and other religious facilities throughout Irving.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Sanctuary and worship area cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Fellowship hall and kitchen cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Classroom and office area maintenance</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Restroom and common area sanitization</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Daycare Facilities</h3>
-              <p class="text-gray-700 mb-4">
-                Safe, thorough cleaning for childcare centers and daycare 
-                facilities in Irving.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Child-safe cleaning products</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Play area and classroom cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Kitchen and dining area sanitization</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Restroom and diaper changing areas</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Retail Cleaning</h3>
-              <p class="text-gray-700 mb-4">
-                Keep your retail space spotless and welcoming for customers 
-                in Irving's competitive retail market.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Sales floor cleaning and maintenance</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Fitting room and restroom cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Display case and fixture cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Entrance and window cleaning</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Government Facilities</h3>
-              <p class="text-gray-700 mb-4">
-                Professional cleaning services for government buildings, courthouses, 
-                and municipal facilities throughout Irving.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Secure facility cleaning protocols</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Courtroom and office cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Public lobby and waiting area maintenance</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Background-checked cleaning staff</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Irving Areas Served -->
-    <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">
-              Irving Areas We Serve
-            </h2>
-            <p class="text-xl text-gray-600">
-              Professional commercial cleaning services available throughout Irving
-            </p>
-          </div>
-          
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">Las Colinas</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">Irving Mall Area</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">DFW Airport Area</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">North Irving</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">South Irving</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">East Irving</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">West Irving</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">Valley Ranch</h4>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div class="flex items-center">
-                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                <h4 class="font-semibold text-gray-900 text-base">Heritage District</h4>
-              </div>
-            </div>
-          </div>
-          
-          <div class="text-center mt-12">
-            <p class="text-gray-600 mb-6">
-              Don't see your Irving area listed? Contact us to check if we service your location.
-            </p>
-            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
-              Get Your Free Quote
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
 
     <Footer client:load />
     <ScrollToTop client:load />
