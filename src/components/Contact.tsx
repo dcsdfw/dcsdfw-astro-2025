@@ -258,6 +258,34 @@ export default function Contact() {
             </form>
           </div>
         </div>
+        
+        {/* Experience the Dream Cleaned Difference Section */}
+        <div className="max-w-4xl mx-auto mt-20 text-center">
+          <h3 className="text-2xl font-semibold mb-6">
+            Experience the Dream Cleaned Difference
+          </h3>
+          
+          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+            Join hundreds of satisfied Dallas businesses who trust Dream Cleaned Services with their commercial cleaning needs. Contact us today to get started.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center">
+              <CheckCircle className="h-5 w-5 text-brand-gold mb-3" />
+              <p className="text-gray-700 font-medium">Free, No-Obligation Quotes</p>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <CheckCircle className="h-5 w-5 text-brand-gold mb-3" />
+              <p className="text-gray-700 font-medium">Customized Cleaning Plans</p>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <CheckCircle className="h-5 w-5 text-brand-gold mb-3" />
+              <p className="text-gray-700 font-medium">Licensed & Insured Professionals</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
