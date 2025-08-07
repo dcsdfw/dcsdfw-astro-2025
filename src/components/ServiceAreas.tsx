@@ -1,5 +1,6 @@
 import { MapPin } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Button } from "./ui/Button";
 
 const counties = [
   {
@@ -90,7 +91,7 @@ export default function ServiceAreas() {
             {counties.map((county, countyIndex) => (
               <div 
                 key={countyIndex}
-                className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10"
+                className="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.2)]"
                 style={{ 
                   transitionDelay: `${countyIndex * 100}ms`,
                   animation: isVisible ? `fade-in 0.6s ease-out ${countyIndex * 100}ms both` : 'none' 
@@ -101,7 +102,7 @@ export default function ServiceAreas() {
                   {county.name}
                 </h4>
                 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-3 mb-6">
                   {county.towns.map((town, townIndex) => (
                     <button 
                       key={townIndex} 
@@ -111,6 +112,16 @@ export default function ServiceAreas() {
                       {town}
                     </button>
                   ))}
+                </div>
+                
+                <div className="text-center">
+                  <Button 
+                    variant="default" 
+                    size="sm"
+                    className="bg-brand-gold hover:bg-brand-gold/90 text-white"
+                  >
+                    See Details
+                  </Button>
                 </div>
               </div>
             ))}

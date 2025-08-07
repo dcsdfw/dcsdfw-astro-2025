@@ -17,20 +17,20 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={cn(
-      "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-      isScrolled ? "bg-white shadow-subtle py-2.5" : "bg-white/95 backdrop-blur-sm py-3"
-    )}>
+             <header className={cn(
+           "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+           isScrolled ? "bg-white shadow-subtle py-2.5" : "bg-white py-3"
+         )}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="/" className="flex items-center">
-            <img 
-              src="/dream-cleaned-logo.jpg" 
-              alt="Dream Cleaned Services - Professional Commercial Cleaning in Dallas" 
-              className="h-12 w-auto object-contain"
-            />
-          </a>
+                         {/* Logo */}
+               <a href="/" className="flex items-center">
+                 <img 
+                   src="/dream-cleaned-logo.jpg" 
+                   alt="Dream Cleaned Services - Professional Commercial Cleaning in Dallas" 
+                   className="h-12 w-auto object-contain"
+                 />
+               </a>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

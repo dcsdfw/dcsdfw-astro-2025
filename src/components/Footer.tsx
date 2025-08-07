@@ -10,11 +10,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="mb-6">
               <a href="/" className="inline-block">
-                <img 
-                  src="/dream-cleaned-logo.jpg" 
-                  alt="Dream Cleaned Services - Professional Commercial Cleaning in Dallas" 
-                  className="h-10 w-auto brightness-0 invert"
-                />
+                <h2 className="text-2xl font-bold text-white" style={{ fontFamily: 'Prompt, sans-serif' }}>
+                  DREAM CLEANED
+                </h2>
               </a>
             </div>
             <p className="text-white/70 mb-6">
