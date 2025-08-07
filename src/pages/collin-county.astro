@@ -28,11 +28,11 @@ const collinCities = [
           <div class="flex items-center justify-center space-x-6 text-gray-600">
             <div class="flex items-center">
               <Clock className="h-5 w-5 mr-2" />
-              <span>Same Day Response</span>
+              <span>Next Day Response</span>
             </div>
             <div class="flex items-center">
               <CheckCircle className="h-5 w-5 mr-2" />
-              <span>Licensed & Insured</span>
+              <span>Bonded & Insured</span>
             </div>
           </div>
         </div>
@@ -109,11 +109,47 @@ const collinCities = [
                   <Clock className="h-5 w-5 text-brand-gold mr-3" />
                   <div>
                     <p class="font-semibold text-gray-900">Service Response</p>
-                    <p class="text-gray-600">Same Day</p>
+                    <p class="text-gray-600">Next Day</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cities and Towns Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Collin County Cities & Towns We Serve
+            </h2>
+            <p class="text-xl text-gray-600">
+              Professional commercial cleaning services available throughout Collin County
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {collinCities.map((city) => (
+              <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center">
+                  <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                  <h4 class="font-semibold text-gray-900 text-base">{city}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div class="text-center mt-12">
+            <p class="text-gray-600 mb-6">
+              Don't see your city listed? Contact us to check if we service your area.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
           </div>
         </div>
       </div>
@@ -288,42 +324,6 @@ const collinCities = [
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cities and Towns Section -->
-    <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">
-              Collin County Cities & Towns We Serve
-            </h2>
-            <p class="text-xl text-gray-600">
-              Professional commercial cleaning services available throughout Collin County
-            </p>
-          </div>
-          
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {collinCities.map((city) => (
-              <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div class="flex items-center">
-                  <MapPin className="h-4 w-4 text-brand-gold mr-3" />
-                  <h4 class="font-semibold text-gray-900 text-base">{city}</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div class="text-center mt-12">
-            <p class="text-gray-600 mb-6">
-              Don't see your city listed? Contact us to check if we service your area.
-            </p>
-            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
-              Get Your Free Quote
-            </a>
           </div>
         </div>
       </div>
