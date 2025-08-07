@@ -1,0 +1,395 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ScrollToTop from '../../components/ScrollToTop';
+import { MapPin, Clock, Users, CheckCircle, Phone } from 'lucide-react';
+---
+
+<Layout title="Commercial Cleaning Services Garland TX | Dream Cleaned">
+  <div>
+    <Header client:load />
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      {/* Hero Background Image */}
+      <div class="absolute inset-0">
+        <img 
+          src="/excellence-image.jpg" 
+          alt="Garland manufacturing and commercial cleaning services" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/80"></div>
+      </div>
+      
+      {/* Background Elements */}
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-20 -right-20 w-80 h-80 bg-brand-gold/20 rounded-full opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-10 -left-20 w-60 h-60 bg-brand-gold/30 rounded-full opacity-60 blur-3xl"></div>
+      </div>
+      
+      <div class="container relative mx-auto px-6 z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-block animate-fade-in">
+            <span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-brand-cream text-brand-gold rounded-full">
+              Garland Commercial Cleaning Experts
+            </span>
+          </div>
+          
+          <h1 class="mb-6 font-heading font-bold animate-fade-in text-balance text-4xl md:text-5xl text-gray-900">
+            Professional <span class="text-brand-gold">Commercial Cleaning</span> Services in Garland, TX
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
+            From manufacturing facilities to Firewheel Town Center, we keep Garland businesses spotless and professional. Trusted by local Garland companies for reliability and excellence.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              Call Now: (817) 993-9993
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Background -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Professional Commercial Cleaning in Garland
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <p class="text-lg text-gray-700 mb-6">
+                Garland, known for its strong manufacturing heritage and diverse business community, 
+                requires cleaning services that understand the unique demands of industrial and commercial environments. 
+                From the bustling Firewheel Town Center to the industrial corridors along LBJ Freeway, 
+                your business environment reflects Garland's commitment to quality and efficiency.
+              </p>
+              <p class="text-lg text-gray-700 mb-6">
+                Dream Cleaned understands the specific cleaning challenges of Garland businesses. Whether you're in the 
+                manufacturing sector, retail, or professional services, we provide tailored cleaning solutions that 
+                maintain the high standards your customers and employees expect in this dynamic city.
+              </p>
+            </div>
+            <div class="bg-brand-cream/30 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Why Garland Businesses Choose Dream Cleaned</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Experience with manufacturing environments</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Knowledge of Garland's business districts</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Flexible scheduling for all business types</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-brand-gold mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Bonded & insured for your protection</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Response Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Fast Response When You Need It
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            When your Garland business needs immediate cleaning attention, we're here to help. 
+            Fast response - call for current availability.
+          </p>
+          <div class="bg-white rounded-lg p-8 shadow-sm">
+            <div class="flex items-center justify-center mb-4">
+              <Clock className="h-8 w-8 text-brand-gold mr-3" />
+              <span class="text-2xl font-semibold text-gray-900">24/7 Emergency Service</span>
+            </div>
+            <p class="text-gray-700 mb-6">
+              Whether it's an unexpected event, emergency cleanup, or last-minute schedule changes, 
+              our Garland cleaning team is ready to respond quickly to keep your business running smoothly.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Commercial Cleaning Services in Garland
+            </h2>
+            <p class="text-xl text-gray-600">
+              Comprehensive cleaning solutions for all types of Garland businesses
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Office Cleaning</h3>
+              <p class="text-gray-700 mb-4">
+                Professional office cleaning services for Garland corporate offices, 
+                small businesses, and everything in between throughout the Garland area.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly cleaning schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Conference rooms and common areas</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Kitchen and break room cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom sanitization</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Medical Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Specialized cleaning for medical offices, clinics, and healthcare 
+                facilities throughout Garland.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>HIPAA-compliant cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Exam room and equipment sanitization</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Waiting area and reception cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Medical waste disposal coordination</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Religious Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Respectful and thorough cleaning for churches, synagogues, mosques, 
+                and other religious facilities throughout Garland.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Sanctuary and worship area cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Fellowship hall and kitchen cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Classroom and office area maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom and common area sanitization</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Daycare Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Safe, thorough cleaning for childcare centers and daycare 
+                facilities in Garland.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Child-safe cleaning products</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Play area and classroom cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Kitchen and dining area sanitization</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Restroom and diaper changing areas</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Retail Cleaning</h3>
+              <p class="text-gray-700 mb-4">
+                Keep your retail space spotless and welcoming for customers 
+                in Garland's competitive retail market.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Sales floor cleaning and maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Fitting room and restroom cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Display case and fixture cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Entrance and window cleaning</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-card p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Government Facilities</h3>
+              <p class="text-gray-700 mb-4">
+                Professional cleaning services for government buildings, courthouses, 
+                and municipal facilities throughout Garland.
+              </p>
+              <ul class="text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Secure facility cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Courtroom and office cleaning</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Public lobby and waiting area maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Background-checked cleaning staff</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Garland Areas Served -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Garland Areas We Serve
+            </h2>
+            <p class="text-xl text-gray-600">
+              Professional commercial cleaning services available throughout Garland
+            </p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">Firewheel Town Center</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">Downtown Garland</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">LBJ Freeway Corridor</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">North Garland</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">South Garland</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">East Garland</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">West Garland</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">Central Garland</h4>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-center">
+                <MapPin className="h-4 w-4 text-brand-gold mr-3" />
+                <h4 class="font-semibold text-gray-900 text-base">Industrial District</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-12">
+            <p class="text-gray-600 mb-6">
+              Don't see your Garland area listed? Contact us to check if we service your location.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <Footer client:load />
+    <ScrollToTop client:load />
+  </div>
+</Layout> 

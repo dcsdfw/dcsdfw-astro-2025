@@ -128,10 +128,10 @@ const serviceAreas = [
                   <h4 class="font-medium mb-3">Cities & Towns Served:</h4>
                   <div class="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                     {area.towns.map((town) => (
-                      <div class="flex items-center">
+                      <a href={`/locations/${town.toLowerCase().replace(/\s+/g, '-')}`} class="flex items-center hover:text-brand-gold transition-colors">
                         <div class="w-1.5 h-1.5 rounded-full bg-brand-gold mr-2"></div>
                         {town}
-                      </div>
+                      </a>
                     ))}
                   </div>
                 </div>

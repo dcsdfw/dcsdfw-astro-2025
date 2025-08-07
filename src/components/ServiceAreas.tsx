@@ -104,13 +104,14 @@ export default function ServiceAreas() {
                 
                 <div className="grid grid-cols-2 gap-3 mb-6">
                   {county.towns.map((town, townIndex) => (
-                    <button 
+                    <a 
                       key={townIndex} 
+                      href={`/locations/${town.toLowerCase().replace(/\s+/g, '-')}`}
                       className="bg-white/5 text-white/90 text-sm px-4 py-3 rounded-lg border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200 text-left flex items-center"
                     >
                       <span className="w-2 h-2 bg-brand-gold rounded-full mr-3 flex-shrink-0"></span>
                       {town}
-                    </button>
+                    </a>
                   ))}
                 </div>
                 

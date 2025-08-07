@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="mt-16 pt-8 border-t border-white/10">
+        <div className="mt-16 pt-8">
           <div className="grid md:grid-cols-2 gap-4">
             <p className="text-white/50 text-sm">
               &copy; {currentYear} Dream Cleaned Services. All rights reserved.
