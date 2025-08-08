@@ -9,9 +9,16 @@ const dallasCities = [
   "Dallas", "Garland", "Irving", "Grand Prairie", "Mesquite", "Carrollton", 
   "Richardson", "Rowlett", "DeSoto", "Cedar Hill", "Duncanville", "Lancaster"
 ];
+
+const cityToSlug = (name: string) =>
+  name
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 ---
 
-<Layout title="Dallas County Commercial Cleaning | Dream Cleaned Services" description="Professional commercial cleaning services throughout Dallas County. Serving Dallas, Garland, Irving, Plano, Richardson and all surrounding cities.">
+<Layout title="Dallas County Commercial Cleaning | Dream Cleaned Services" description="Professional commercial cleaning services throughout Dallas County. Serving Dallas, Garland, Irving, Richardson and all surrounding cities.">
   <div class="min-h-screen">
     <Header client:load />
     
@@ -55,7 +62,7 @@ const dallasCities = [
                 solutions for every industry.
               </p>
               <p class="text-gray-700 mb-6">
-                From the bustling downtown Dallas skyline to the growing suburbs of Plano and 
+                From the bustling downtown Dallas skyline to the growing suburbs of Irving and 
                 Richardson, we deliver consistent, high-quality cleaning services that help 
                 businesses maintain professional environments and impress clients.
               </p>
@@ -134,12 +141,12 @@ const dallasCities = [
           
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {dallasCities.map((city) => (
-              <button class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow text-left w-full">
+              <a href={`/locations/${cityToSlug(city)}`} class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow text-left w-full">
                 <div class="flex items-center">
-                  <div class="w-2 h-2 bg-brand-gold rounded-full mr-3 flex-shrink-0"></div>
+                  <MapPin className="h-4 w-4 text-brand-gold mr-3" />
                   <span class="font-medium text-gray-900 text-sm">{city}</span>
                 </div>
-              </button>
+              </a>
             ))}
           </div>
           

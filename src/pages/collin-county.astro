@@ -9,6 +9,13 @@ const collinCities = [
   "Plano", "Frisco", "McKinney", "Allen", "Wylie", "Celina", "Prosper", 
   "Princeton", "Anna", "Melissa", "Murphy", "Fairview"
 ];
+
+const cityToSlug = (name: string) =>
+  name
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 ---
 
 <Layout title="Collin County Commercial Cleaning | Dream Cleaned Services" description="Professional commercial cleaning services throughout Collin County. Serving Plano, McKinney, Allen, Frisco and all surrounding cities.">
@@ -134,12 +141,12 @@ const collinCities = [
           
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {collinCities.map((city) => (
-              <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <a href={`/locations/${cityToSlug(city)}`} class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div class="flex items-center">
                   <MapPin className="h-4 w-4 text-brand-gold mr-3" />
                   <h4 class="font-semibold text-gray-900 text-base">{city}</h4>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
           

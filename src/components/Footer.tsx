@@ -48,19 +48,17 @@ export default function Footer() {
           
           <div>
             <h4 className="text-lg font-semibold mb-6">Service Areas</h4>
-            <div className="space-y-3">
-              <div className="grid grid-cols-2 gap-4">
-                <a href="/locations/dallas" className="text-white/70 hover:text-brand-lightGold transition-colors">Dallas</a>
-                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Fort Worth</a>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Plano</a>
-                <a href="/locations/irving" className="text-white/70 hover:text-brand-lightGold transition-colors">Irving</a>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Arlington</a>
-                <a href="#areas" className="text-white/70 hover:text-brand-lightGold transition-colors">Frisco</a>
-              </div>
+            <div className="grid grid-cols-2 gap-3">
+              <a href="/locations/dallas" className="text-white/70 hover:text-brand-lightGold transition-colors">Dallas</a>
+              <a href="/locations/fort-worth" className="text-white/70 hover:text-brand-lightGold transition-colors">Fort Worth</a>
+              <a href="/locations/arlington" className="text-white/70 hover:text-brand-lightGold transition-colors">Arlington</a>
+              <a href="/locations/plano" className="text-white/70 hover:text-brand-lightGold transition-colors">Plano</a>
+              <a href="/locations/irving" className="text-white/70 hover:text-brand-lightGold transition-colors">Irving</a>
+              <a href="/locations/garland" className="text-white/70 hover:text-brand-lightGold transition-colors">Garland</a>
+              <a href="/locations/grand-prairie" className="text-white/70 hover:text-brand-lightGold transition-colors">Grand Prairie</a>
+              <a href="/locations/mckinney" className="text-white/70 hover:text-brand-lightGold transition-colors">McKinney</a>
+              <a href="/locations/frisco" className="text-white/70 hover:text-brand-lightGold transition-colors">Frisco</a>
+              <a href="/locations/mesquite" className="text-white/70 hover:text-brand-lightGold transition-colors">Mesquite</a>
             </div>
           </div>
           

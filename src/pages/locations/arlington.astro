@@ -1,0 +1,453 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ScrollToTop from '../../components/ScrollToTop';
+import { MapPin, Clock, Users, CheckCircle, Phone, Building, Car, ShoppingBag, Heart, GraduationCap, Church } from 'lucide-react';
+---
+
+<Layout title="Commercial Cleaning Services Arlington TX | Dream Cleaned">
+  <div>
+    <Header client:load />
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      {/* Hero Background Image */}
+      <div class="absolute inset-0">
+        <img 
+          src="/arlington-entertainment.jpg" 
+          alt="Arlington Entertainment District commercial cleaning services" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-white/80"></div>
+      </div>
+      
+      {/* Background Elements */}
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-20 -right-20 w-80 h-80 bg-brand-gold/20 rounded-full opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-10 -left-20 w-60 h-60 bg-brand-gold/30 rounded-full opacity-60 blur-3xl"></div>
+      </div>
+      
+      <div class="container relative mx-auto px-6 z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-block animate-fade-in">
+            <span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-brand-cream text-brand-gold rounded-full">
+              Arlington Commercial Cleaning Experts
+            </span>
+          </div>
+          
+          <h1 class="mb-6 font-heading font-bold animate-fade-in text-balance text-4xl md:text-5xl text-gray-900">
+            Professional <span class="text-brand-gold">Commercial Cleaning</span> Services in Arlington, TX
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
+            From the Entertainment District to the bustling business corridors, we keep Arlington businesses spotless and professional. Trusted by local Arlington companies for reliability and excellence.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              Call Now: (817) 993-9993
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arlington Business Environment -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Arlington's Trusted Commercial Cleaning Experts
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <p class="text-base text-gray-700 mb-6">
+                Arlington, home to world-class sports venues and entertainment destinations, is a vibrant hub of tourism and commerce in North Texas. From the iconic AT&T Stadium and Globe Life Field to the dynamic Texas Live! entertainment complex, your business environment reflects Arlington's commitment to excellence and hospitality.
+              </p>
+              <p class="text-base text-gray-700 mb-6">
+                Dream Cleaned understands the unique cleaning challenges of Arlington businesses. Whether you're in the Entertainment District, the University area, or the thriving business corridors, we provide tailored cleaning solutions that maintain the high standards your customers and employees expect in this dynamic city.
+              </p>
+            </div>
+            <div class="bg-white p-6 pb-8 rounded-lg shadow-lg border-l-4 border-brand-gold self-start">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Why Arlington Businesses Choose<br>Dream Cleaned</h3>
+              <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Local expertise in Arlington business districts</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Flexible scheduling for high-traffic areas</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Experience with diverse business types</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Bonded & insured for your protection</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arlington Coverage Areas -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Emergency Coverage Throughout Arlington
+          </h2>
+          <p class="text-xl text-gray-600 mb-12 text-center">
+            Our cleaning teams cover every corner of Arlington and surrounding areas
+          </p>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Entertainment District</h4>
+              <p class="text-gray-600 text-sm">Sports venues and entertainment complexes</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">North Arlington</h4>
+              <p class="text-gray-600 text-sm">Business parks and retail centers</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">South Arlington</h4>
+              <p class="text-gray-600 text-sm">Industrial and commercial areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">UTA Area</h4>
+              <p class="text-gray-600 text-sm">University and research facilities</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Lincoln Square</h4>
+              <p class="text-gray-600 text-sm">Shopping and dining district</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Downtown Arlington</h4>
+              <p class="text-gray-600 text-sm">Cultural and business hub</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">East Arlington</h4>
+              <p class="text-gray-600 text-sm">Mixed commercial and retail</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">West Arlington</h4>
+              <p class="text-gray-600 text-sm">Office parks and medical facilities</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Highlands</h4>
+              <p class="text-gray-600 text-sm">Professional offices and retail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arlington Climate Impact -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Arlington's Climate Impact on Cleaning Needs
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Summer Heat (May-September)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Extreme temperatures exceeding 100°F</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>High event traffic and foot traffic</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Air conditioning system maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Enhanced sanitization protocols</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Winter Challenges (December-February)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Rapid temperature swings</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Salt and debris tracking</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Indoor air quality management</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Preventive maintenance schedules</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Major Arlington Service Locations -->
+    <section class="py-16" style="background-color: #faf8f4;">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Major Arlington Service Locations
+          </h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Building className="h-5 w-5 text-brand-gold mr-2" />
+                Sports & Entertainment
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>AT&T Stadium</li>
+                <li>Globe Life Field</li>
+                <li>Texas Live!</li>
+                <li>Choctaw Stadium</li>
+                <li>Esports Stadium Arlington</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Heart className="h-5 w-5 text-brand-gold mr-2" />
+                Healthcare Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Medical City Arlington</li>
+                <li>USMD Hospital</li>
+                <li>Texas Health Arlington</li>
+                <li>Medical office buildings</li>
+                <li>Specialty clinics</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <ShoppingBag className="h-5 w-5 text-brand-gold mr-2" />
+                Retail & Entertainment
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>The Parks Mall</li>
+                <li>Lincoln Square</li>
+                <li>Arlington Highlands</li>
+                <li>Downtown Arlington</li>
+                <li>Entertainment District shops</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <GraduationCap className="h-5 w-5 text-brand-gold mr-2" />
+                Educational Institutions
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>UT Arlington campus</li>
+                <li>Research facilities</li>
+                <li>Arlington ISD facilities</li>
+                <li>Private schools</li>
+                <li>Training centers</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Church className="h-5 w-5 text-brand-gold mr-2" />
+                Religious Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Downtown churches</li>
+                <li>Community centers</li>
+                <li>Synagogues and mosques</li>
+                <li>Religious schools</li>
+                <li>Fellowship halls</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Car className="h-5 w-5 text-brand-gold mr-2" />
+                Government & Public
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Arlington City Hall</li>
+                <li>Municipal buildings</li>
+                <li>Public libraries</li>
+                <li>Community centers</li>
+                <li>Convention facilities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arlington Cleaning Programs -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Arlington Cleaning Programs
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Many Arlington businesses depend on our comprehensive cleaning services
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Scheduled Cleaning Programs</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Priority emergency response</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Volume pricing discounts</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated cleaning teams</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Customized Service Plans</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Flexible scheduling options</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Specialized cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Monthly service reports</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>24/7 emergency support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arlington Cleaning Expertise -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Arlington Cleaning Expertise
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Our cleaning teams understand Arlington's unique business environments
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Sports & Entertainment</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Stadium and arena cleaning</li>
+                <li>• Event venue maintenance</li>
+                <li>• High-traffic area protocols</li>
+                <li>• Post-event cleanup</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Medical & Healthcare</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Hospital facility cleaning</li>
+                <li>• Medical office standards</li>
+                <li>• Clinic sanitization</li>
+                <li>• Healthcare protocols</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Retail & Entertainment</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Mall and shopping center care</li>
+                <li>• Restaurant cleaning</li>
+                <li>• Entertainment venue protocols</li>
+                <li>• Retail store maintenance</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Educational & Research</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• University facility cleaning</li>
+                <li>• Research lab protocols</li>
+                <li>• School facility standards</li>
+                <li>• Campus maintenance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Response Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Fast Response When You Need It
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            When your Arlington business needs immediate cleaning attention, we're here to help. 
+            Fast response - call for current availability.
+          </p>
+          <div class="bg-white rounded-lg p-8 shadow-sm">
+            <div class="flex items-center justify-center mb-4">
+              <Clock className="h-8 w-8 text-brand-gold mr-3" />
+              <span class="text-2xl font-semibold text-gray-900">24/7 Emergency Service</span>
+            </div>
+            <p class="text-gray-700 mb-6">
+              Whether it's an unexpected event, emergency cleanup, or last-minute schedule changes, 
+              our Arlington cleaning team is ready to respond quickly to keep our clients business running smoothly.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer client:load />
+    <ScrollToTop client:load />
+  </div>
+</Layout>

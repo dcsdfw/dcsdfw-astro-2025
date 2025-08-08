@@ -17,7 +17,7 @@ const counties = [
   },
   {
     name: "Denton County",
-    towns: ["Denton", "Lewisville", "Flower Mound", "Coppell", "The Colony", "Little Elm", "Highland Village", "Lake Dallas", "Corinth", "Shallowwater"]
+    towns: ["Denton", "Lewisville", "Flower Mound", "The Colony", "Little Elm", "Highland Village", "Lake Dallas", "Corinth", "Sanger", "Aubrey", "Pilot Point", "Roanoke", "Argyle"]
   }
 ];
 
