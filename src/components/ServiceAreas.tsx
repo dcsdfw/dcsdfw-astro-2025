@@ -5,19 +5,19 @@ import { Button } from "./ui/Button";
 const counties = [
   {
     name: "Dallas County",
-    towns: ["Dallas", "Irving", "Garland", "Mesquite", "Richardson", "Carrollton", "DeSoto", "Lancaster", "University Park", "Highland Park"]
+    towns: ["Dallas", "Irving", "Garland", "Mesquite", "Richardson", "Carrollton", "DeSoto", "University Park", "Highland Park", "Coppell", "Cedar Hill", "Duncanville"]
   },
   {
     name: "Tarrant County", 
-    towns: ["Fort Worth", "Arlington", "Grand Prairie", "Mansfield", "Euless", "Bedford", "Hurst", "Grapevine", "Southlake", "Colleyville"]
+    towns: ["Fort Worth", "Arlington", "Grand Prairie", "Mansfield", "Euless", "Bedford", "Hurst", "Grapevine", "Southlake", "Colleyville", "North Richland Hills", "Keller"]
   },
   {
     name: "Collin County",
-    towns: ["Plano", "Frisco", "McKinney", "Allen", "Wylie", "Murphy", "Lucas", "Fairview", "Parker", "Prosper"]
+    towns: ["Plano", "Frisco", "McKinney", "Allen", "Wylie", "Murphy", "Fairview", "Prosper", "Celina", "Princeton", "Anna", "Melissa"]
   },
   {
     name: "Denton County",
-    towns: ["Denton", "Lewisville", "Flower Mound", "The Colony", "Little Elm", "Highland Village", "Lake Dallas", "Corinth", "Sanger", "Aubrey", "Pilot Point", "Roanoke", "Argyle"]
+    towns: ["Denton", "Lewisville", "Flower Mound", "The Colony", "Little Elm", "Highland Village", "Corinth", "Sanger", "Aubrey", "Pilot Point", "Roanoke", "Argyle"]
   }
 ];
 
@@ -116,13 +116,12 @@ export default function ServiceAreas() {
                 </div>
                 
                 <div className="text-center">
-                  <Button 
-                    variant="default" 
-                    size="sm"
-                    className="bg-brand-gold hover:bg-brand-gold/90 text-white"
+                  <a 
+                    href={`/${county.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="inline-flex items-center px-4 py-3 bg-brand-gold hover:bg-brand-gold/90 text-white rounded-lg font-semibold transition-colors text-sm"
                   >
                     See Details
-                  </Button>
+                  </a>
                 </div>
               </div>
             ))}

@@ -3,64 +3,335 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
-import { CheckCircle } from 'lucide-react';
+import { MapPin, Clock, Users, CheckCircle, Phone, Building, Car, ShoppingBag, Heart, GraduationCap, Church } from 'lucide-react';
 ---
 
 <Layout title="Commercial Cleaning Services Southlake TX | Dream Cleaned">
   <div>
     <Header client:load />
-
+    
+    <!-- Hero Section -->
     <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+      {/* Hero Background Image */}
       <div class="absolute inset-0">
-        <img src="/excellence-image.jpg" alt="Southlake TX commercial cleaning services" class="w-full h-full object-cover" />
+        <img 
+          src="/excellence-image.jpg" 
+          alt="Southlake TX commercial cleaning services" 
+          class="w-full h-full object-cover"
+        />
         <div class="absolute inset-0 bg-white/80"></div>
       </div>
+      
+      {/* Background Elements */}
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-20 -right-20 w-80 h-80 bg-brand-gold/20 rounded-full opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-10 -left-20 w-60 h-60 bg-brand-gold/30 rounded-full opacity-60 blur-3xl"></div>
+      </div>
+      
       <div class="container relative mx-auto px-6 z-10">
         <div class="max-w-3xl mx-auto text-center">
-          <h1 class="mb-6 font-heading font-bold text-balance text-4xl md:text-5xl text-gray-900">Professional Commercial Cleaning Services in Southlake, TX</h1>
-          <p class="text-lg md:text-xl text-gray-600 mb-8">Discreet, high-quality cleaning for executive offices, retail, and medical facilities in Southlake.</p>
-          <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">Get Your Free Quote</a>
-            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">Call Now: (817) 993-9993</a>
+          <div class="inline-block animate-fade-in">
+            <span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-brand-cream text-brand-gold rounded-full">
+              Southlake Commercial Cleaning Experts
+            </span>
+          </div>
+          
+          <h1 class="mb-6 font-heading font-bold animate-fade-in text-balance text-4xl md:text-5xl text-gray-900">
+            Professional <span class="text-brand-gold">Commercial Cleaning</span> Services in Southlake, TX
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
+            From the upscale Southlake Town Square to the corporate offices along State Highway 114, we keep Southlake businesses spotless and professional. Trusted by local Southlake companies for reliability and excellence.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              Call Now: (817) 993-9993
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Southlake Business Environment -->
     <section class="py-16">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-start">
-          <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Southlake Businesses Choose Us</h2>
-            <ul class="space-y-3 text-gray-700">
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Professional, bonded & insured crews</span></li>
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Discreet after-hours service options</span></li>
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Medical, office, and retail expertise</span></li>
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Rapid emergency response availability</span></li>
-            </ul>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-card border-l-4 border-brand-gold">
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">Popular Services in Southlake</h3>
-            <ul class="space-y-2 text-gray-700">
-              <li>Executive office cleaning</li>
-              <li>Retail and boutique cleaning</li>
-              <li>Healthcare and dental office cleaning</li>
-              <li>Church and school facility cleaning</li>
-              <li>Move-in/move-out cleaning</li>
-            </ul>
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Southlake's Trusted Commercial Cleaning Experts
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <p class="text-base text-gray-700 mb-6">
+                Southlake, known for its upscale lifestyle and excellent schools, is home to a thriving business community. From the prestigious Southlake Town Square to the corporate headquarters along State Highway 114, your business environment reflects Southlake's commitment to excellence and luxury standards.
+              </p>
+              <p class="text-base text-gray-700 mb-6">
+                Dream Cleaned understands the unique cleaning challenges of Southlake businesses. Whether you're in the luxury retail sector, professional services, or upscale hospitality, we provide tailored cleaning solutions that maintain the high standards your customers and employees expect in this prestigious, family-oriented city.
+              </p>
+            </div>
+            <div class="bg-white p-6 pb-8 rounded-lg shadow-lg border-l-4 border-brand-gold self-start">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Why Southlake Businesses Choose<br>Dream Cleaned</h3>
+              <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Local expertise in Southlake business districts</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Luxury and upscale cleaning expertise</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Experience with diverse business types</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Bonded & insured for your protection</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Services Section -->
     <section class="py-16 bg-brand-cream/30">
       <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Comprehensive Cleaning Services for Southlake Businesses
+          </h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Office Cleaning */}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-4">
+                <Building className="h-8 w-8 text-brand-gold mr-3" />
+                <h3 class="text-xl font-semibold text-gray-900">Office Cleaning</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Professional office cleaning services including cubicles, conference rooms, break rooms, and common areas.</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Desk and surface sanitization</li>
+                <li>• Break room deep cleaning</li>
+                <li>• Conference room preparation</li>
+                <li>• Common area maintenance</li>
+              </ul>
+            </div>
+
+            {/* Retail Cleaning */}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-4">
+                <ShoppingBag className="h-8 w-8 text-brand-gold mr-3" />
+                <h3 class="text-xl font-semibold text-gray-900">Retail Cleaning</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Complete retail space cleaning including sales floors, fitting rooms, and customer service areas.</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Sales floor maintenance</li>
+                <li>• Fitting room sanitization</li>
+                <li>• Display case cleaning</li>
+                <li>• Customer service areas</li>
+              </ul>
+            </div>
+
+            {/* Medical Cleaning */}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-4">
+                <Heart className="h-8 w-8 text-brand-gold mr-3" />
+                <h3 class="text-xl font-semibold text-gray-900">Medical Cleaning</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Specialized cleaning for medical offices, dental practices, and healthcare facilities.</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Exam room sanitization</li>
+                <li>• Waiting area cleaning</li>
+                <li>• Medical equipment surfaces</li>
+                <li>• HIPAA-compliant procedures</li>
+              </ul>
+            </div>
+
+            {/* Industrial Cleaning */}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-4">
+                <Car className="h-8 w-8 text-brand-gold mr-3" />
+                <h3 class="text-xl font-semibold text-gray-900">Industrial Cleaning</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Heavy-duty cleaning for warehouses, manufacturing facilities, and industrial spaces.</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Warehouse floor cleaning</li>
+                <li>• Equipment area maintenance</li>
+                <li>• Loading dock cleaning</li>
+                <li>• Safety area preparation</li>
+              </ul>
+            </div>
+
+            {/* Educational Cleaning */}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-4">
+                <GraduationCap className="h-8 w-8 text-brand-gold mr-3" />
+                <h3 class="text-xl font-semibold text-gray-900">Educational Cleaning</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Comprehensive cleaning for schools, colleges, and educational facilities.</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Classroom sanitization</li>
+                <li>• Administrative office cleaning</li>
+                <li>• Gym and athletic facility care</li>
+                <li>• Library and study area maintenance</li>
+              </ul>
+            </div>
+
+            {/* Religious Facility Cleaning */}
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-4">
+                <Church className="h-8 w-8 text-brand-gold mr-3" />
+                <h3 class="text-xl font-semibold text-gray-900">Religious Facility Cleaning</h3>
+              </div>
+              <p class="text-gray-600 mb-4">Respectful cleaning services for churches, synagogues, and religious institutions.</p>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>• Sanctuary and worship area cleaning</li>
+                <li>• Fellowship hall maintenance</li>
+                <li>• Office and classroom care</li>
+                <li>• Respectful service approach</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Why Southlake Businesses Trust Dream Cleaned
+          </h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="bg-brand-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-brand-gold" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Experienced Team</h3>
+              <p class="text-gray-600">Our trained professionals understand Southlake's unique business environment and cleaning requirements.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="bg-brand-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-brand-gold" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Flexible Scheduling</h3>
+              <p class="text-gray-600">We work around your business hours with nightly, weekly, or custom cleaning schedules.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="bg-brand-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-8 w-8 text-brand-gold" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Quality Guaranteed</h3>
+              <p class="text-gray-600">We stand behind our work with satisfaction guarantees and ongoing quality checks.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="bg-brand-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="h-8 w-8 text-brand-gold" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Local Expertise</h3>
+              <p class="text-gray-600">Deep knowledge of Southlake's business districts and specific cleaning challenges.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="bg-brand-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="h-8 w-8 text-brand-gold" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">24/7 Support</h3>
+              <p class="text-gray-600">Emergency cleaning services available when you need them most.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="bg-brand-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-8 w-8 text-brand-gold" />
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Fully Insured</h3>
+              <p class="text-gray-600">Complete liability coverage and worker's compensation for your peace of mind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Serving Southlake and Surrounding Areas
+          </h2>
+          <p class="text-lg text-gray-600 mb-8 text-center">
+            We provide commercial cleaning services throughout Southlake and the surrounding communities in Tarrant County.
+          </p>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <h3 class="font-semibold text-gray-900 mb-2">Southlake Areas</h3>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Southlake Town Square</li>
+                <li>• State Highway 114 Corridor</li>
+                <li>• Business Park Areas</li>
+                <li>• Corporate Office Districts</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <h3 class="font-semibold text-gray-900 mb-2">Nearby Communities</h3>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Grapevine</li>
+                <li>• Colleyville</li>
+                <li>• Keller</li>
+                <li>• Trophy Club</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <h3 class="font-semibold text-gray-900 mb-2">Business Types</h3>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Luxury Retail & Shopping</li>
+                <li>• Professional Offices</li>
+                <li>• Medical & Dental</li>
+                <li>• Upscale Hospitality</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-brand-gold">
+      <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Need Cleaning Help in Southlake?</h2>
-          <p class="text-xl text-gray-600 mb-8">Get a quick quote or call for emergency availability.</p>
+          <h2 class="text-3xl font-bold text-white mb-6">
+            Ready to Experience the Dream Cleaned Difference?
+          </h2>
+          <p class="text-xl text-white/90 mb-8">
+            Get your free quote today and discover why Southlake businesses choose Dream Cleaned for their commercial cleaning needs.
+          </p>
+          
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">Get Your Free Quote</a>
-            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">Call (817) 993-9993</a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white text-brand-gold rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <Phone className="h-5 w-5 mr-2" />
+              Call (817) 993-9993
+            </a>
+            <a href="#contact" class="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-brand-gold transition-colors">
+              Get Free Quote
+            </a>
+          </div>
+          
+          <div class="mt-8 text-white/80">
+            <p class="text-sm">Serving Southlake, TX and surrounding areas</p>
+            <p class="text-sm">Licensed • Bonded • Insured</p>
           </div>
         </div>
       </div>

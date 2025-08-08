@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
-import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
+import { MapPin, Clock, Users, CheckCircle, Phone, Building, Car, ShoppingBag, Heart, GraduationCap, Church } from 'lucide-react';
 ---
 
 <Layout title="Richardson Commercial Cleaning | Dream Cleaned Services" description="Professional commercial cleaning services in Richardson, TX. Serving offices, retail, medical facilities, and industrial properties throughout Richardson and surrounding areas.">
@@ -41,7 +41,7 @@ import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
           </h1>
           
           <p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
-            From office buildings to retail spaces, we keep your Richardson workspace pristine and welcoming.
+            From the Telecom Corridor to the medical district, we keep Richardson businesses spotless and professional. Trusted by local Richardson companies for reliability and excellence.
           </p>
           
           <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
@@ -212,14 +212,137 @@ import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
       </div>
     </section>
 
-    <!-- Richardson Services -->
+    <!-- Major Richardson Service Locations -->
     <section class="py-16" style="background-color: #faf8f4;">
       <div class="container mx-auto px-6">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Commercial Cleaning Services in Richardson
+            Major Richardson Service Locations
           </h2>
+          
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Building className="h-5 w-5 text-brand-gold mr-2" />
+                Corporate & Office Centers
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Telecom Corridor headquarters</li>
+                <li>Technology company offices</li>
+                <li>Professional service firms</li>
+                <li>Executive office buildings</li>
+                <li>Business service centers</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Heart className="h-5 w-5 text-brand-gold mr-2" />
+                Healthcare Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Richardson Medical District</li>
+                <li>Medical office buildings</li>
+                <li>Dental offices and clinics</li>
+                <li>Specialty medical facilities</li>
+                <li>Healthcare administration</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <ShoppingBag className="h-5 w-5 text-brand-gold mr-2" />
+                Retail & Entertainment
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Downtown Richardson shops</li>
+                <li>Shopping centers</li>
+                <li>Retail districts</li>
+                <li>Entertainment venues</li>
+                <li>Restaurant facilities</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <GraduationCap className="h-5 w-5 text-brand-gold mr-2" />
+                Educational Institutions
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>UT Dallas campus</li>
+                <li>Richardson ISD schools</li>
+                <li>Private schools</li>
+                <li>Training centers</li>
+                <li>Educational support facilities</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Church className="h-5 w-5 text-brand-gold mr-2" />
+                Religious Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Community churches</li>
+                <li>Religious centers</li>
+                <li>Synagogues and mosques</li>
+                <li>Religious schools</li>
+                <li>Fellowship halls</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Car className="h-5 w-5 text-brand-gold mr-2" />
+                Government & Public
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Richardson City Hall</li>
+                <li>Richardson Public Library</li>
+                <li>Community centers</li>
+                <li>Public works facilities</li>
+                <li>Recreation centers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Richardson Cleaning Programs -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Richardson Cleaning Programs
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Many Richardson businesses depend on our comprehensive cleaning services
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Scheduled Cleaning Programs</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Priority emergency response</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Volume pricing discounts</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated cleaning teams</span>
+                </li>
+              </ul>
+            </div>
+            
             <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
               <h3 class="text-xl font-semibold text-gray-900 mb-4">Customized Service Plans</h3>
               <ul class="space-y-3 text-gray-700">
@@ -241,114 +364,60 @@ import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
                 </li>
               </ul>
             </div>
-            
-            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Technology & Office Cleaning</h3>
-              <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Daily, weekly, or monthly schedules</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Conference rooms and common areas</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Kitchen and break room cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Restroom sanitization</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Medical & Healthcare</h3>
-              <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Medical office cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Healthcare facility sanitization</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>HIPAA compliant cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Infection control protocols</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Richardson Emergency Services -->
-    <section class="py-16">
+    <!-- Richardson Cleaning Expertise -->
+    <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Emergency Cleaning Services in Richardson
+            Richardson Cleaning Expertise
           </h2>
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">24/7 Emergency Response</h3>
-              <p class="text-gray-700 mb-4">
-                When unexpected cleaning emergencies occur in Richardson, our team is ready 
-                to respond quickly. We understand that business interruptions can be costly, 
-                which is why we offer rapid response cleaning services.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Same-day emergency cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Water damage restoration</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Fire and smoke damage cleanup</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Biohazard and trauma cleanup</span>
-                </li>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Our cleaning teams understand Richardson's unique business environments
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Technology & Telecom</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Telecom Corridor cleaning</li>
+                <li>• Technology company maintenance</li>
+                <li>• Data center protocols</li>
+                <li>• Executive office standards</li>
               </ul>
             </div>
             
-            <div class="bg-white rounded-xl shadow-card p-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Preventive Maintenance</h3>
-              <p class="text-gray-700 mb-4">
-                Regular cleaning maintenance helps prevent emergencies and keeps your Richardson 
-                business running smoothly. Our preventive programs are designed to address potential 
-                issues before they become problems.
-              </p>
-              <ul class="text-gray-700 space-y-2">
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Scheduled maintenance cleaning</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Equipment and system inspections</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Preventive cleaning protocols</span>
-                </li>
-                <li class="flex items-start">
-                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Regular quality assessments</span>
-                </li>
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Medical & Healthcare</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Medical facility cleaning</li>
+                <li>• Hospital cleaning standards</li>
+                <li>• Dental office protocols</li>
+                <li>• Medical equipment care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Retail & Shopping</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Shopping center maintenance</li>
+                <li>• Retail store cleaning</li>
+                <li>• Entertainment venue protocols</li>
+                <li>• Restaurant facility care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Educational & Religious</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• School facility cleaning</li>
+                <li>• Campus maintenance protocols</li>
+                <li>• Church and synagogue care</li>
+                <li>• Daycare facility standards</li>
               </ul>
             </div>
           </div>
@@ -356,24 +425,28 @@ import { MapPin, Clock, Users, CheckCircle } from 'lucide-react';
       </div>
     </section>
 
-    <!-- Richardson Contact Section -->
-    <section class="py-16 bg-gray-50">
+    <!-- Emergency Response Section -->
+    <section class="py-16">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            Ready to Get Started in Richardson?
+            Fast Response When You Need It
           </h2>
           <p class="text-xl text-gray-600 mb-8">
-            Contact us today for a free consultation and quote for your Richardson business
+            When your Richardson business needs immediate cleaning attention, we're here to help. 
+            Fast response - call for current availability.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+14692600000" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
-              <Clock className="h-5 w-5 mr-2" />
-              Call Now: (469) 260-0000
-            </a>
-            <a href="#contact" class="inline-flex items-center px-6 py-3 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
-              <MapPin className="h-5 w-5 mr-2" />
-              Get Free Quote
+          <div class="bg-white rounded-lg p-8 shadow-sm">
+            <div class="flex items-center justify-center mb-4">
+              <Clock className="h-8 w-8 text-brand-gold mr-3" />
+              <span class="text-2xl font-semibold text-gray-900">24/7 Emergency Service</span>
+            </div>
+            <p class="text-gray-700 mb-6">
+              Whether it's an unexpected event, emergency cleanup, or last-minute schedule changes, 
+              our Richardson cleaning team is ready to respond quickly to keep our clients business running smoothly.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
             </a>
           </div>
         </div>

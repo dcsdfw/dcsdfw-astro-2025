@@ -3,64 +3,429 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
-import { CheckCircle } from 'lucide-react';
+import { MapPin, Clock, Users, CheckCircle, Phone, Building, Car, ShoppingBag, Heart, GraduationCap, Church } from 'lucide-react';
 ---
 
 <Layout title="Commercial Cleaning Services Plano TX | Dream Cleaned">
   <div>
     <Header client:load />
-
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-      <div class="absolute inset-0">
-        <img src="/excellence-image.jpg" alt="Plano TX commercial cleaning services" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-white/80"></div>
-      </div>
-      <div class="container relative mx-auto px-6 z-10">
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-brand-dark text-white">
+      <div class="container mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center">
-          <h1 class="mb-6 font-heading font-bold text-balance text-4xl md:text-5xl text-gray-900">Professional Commercial Cleaning Services in Plano, TX</h1>
-          <p class="text-lg md:text-xl text-gray-600 mb-8">Trusted by Plano offices, tech campuses, retail, and medical facilities.</p>
-          <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">Get Your Free Quote</a>
-            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">Call Now: (817) 993-9993</a>
+          <div class="inline-block animate-fade-in">
+            <span class="inline-block px-3 py-1 mb-6 text-sm font-medium bg-brand-gold/20 text-brand-lightGold rounded-full">
+              Plano Commercial Cleaning Experts
+            </span>
+          </div>
+          
+          <h1 class="mb-6 font-heading font-bold animate-fade-in text-balance text-4xl md:text-5xl text-white">
+            Professional <span class="text-brand-gold">Commercial Cleaning</span> Services in Plano, TX
+          </h1>
+          
+          <p class="text-lg md:text-xl text-white/80 mb-8 animate-fade-in delay-75 text-balance">
+            From Legacy West tech campuses to Shops at Legacy retail districts, we keep Plano businesses spotless and professional. Trusted by local Plano companies for reliability and excellence.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
+            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
+            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 bg-white border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">
+              Call Now: (817) 993-9993
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Plano Business Environment -->
     <section class="py-16">
       <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-start">
-          <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Plano Businesses Choose Us</h2>
-            <ul class="space-y-3 text-gray-700">
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Corporate-ready, bonded & insured teams</span></li>
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Nightly, weekly, and custom schedules</span></li>
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Medical, office, and retail expertise</span></li>
-              <li class="flex items-start"><CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5" /><span>Rapid emergency cleaning response</span></li>
-            </ul>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-card border-l-4 border-brand-gold">
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">Popular Services in Plano</h3>
-            <ul class="space-y-2 text-gray-700">
-              <li>Office and campus cleaning</li>
-              <li>Retail and restaurant cleaning</li>
-              <li>Healthcare and dental office cleaning</li>
-              <li>Church and school facility cleaning</li>
-              <li>Move-in/move-out cleaning</li>
-            </ul>
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Plano's Trusted Commercial Cleaning Experts
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <p class="text-base text-gray-700 mb-6">
+                Plano, a major business hub in Collin County, is home to numerous Fortune 500 headquarters and a thriving technology sector. From the corporate campuses of Legacy West to the retail districts of Shops at Legacy, your business environment reflects Plano's commitment to innovation and corporate excellence.
+              </p>
+              <p class="text-base text-gray-700 mb-6">
+                Dream Cleaned understands the unique cleaning challenges of Plano businesses. Whether you're in the tech corridors of Legacy, the medical facilities of the Medical District, or the educational institutions, we provide tailored cleaning solutions that maintain the high standards your corporate clients and employees expect.
+              </p>
+            </div>
+            <div class="bg-white p-6 pb-8 rounded-lg shadow-lg border-l-4 border-brand-gold self-start">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Why Plano Businesses Choose<br>Dream Cleaned</h3>
+              <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Corporate campus expertise</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Tech industry knowledge</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Flexible scheduling for corporate clients</span>
+                </div>
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-3 flex-shrink-0" />
+                  <span class="text-sm text-gray-700">Bonded & insured for your protection</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 bg-brand-cream/30">
+    <!-- Plano Coverage Areas -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Emergency Coverage Throughout Plano
+          </h2>
+          <p class="text-xl text-gray-600 mb-12 text-center">
+            Our cleaning teams cover every corner of Plano and surrounding areas
+          </p>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Legacy West</h4>
+              <p class="text-gray-600 text-sm">Corporate headquarters and tech campuses</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Shops at Legacy</h4>
+              <p class="text-gray-600 text-sm">Retail and entertainment district</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Medical District</h4>
+              <p class="text-gray-600 text-sm">Healthcare facilities and medical offices</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Downtown Plano</h4>
+              <p class="text-gray-600 text-sm">Historic district and government offices</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">West Plano</h4>
+              <p class="text-gray-600 text-sm">Corporate and residential areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">East Plano</h4>
+              <p class="text-gray-600 text-sm">Industrial and commercial facilities</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">North Plano</h4>
+              <p class="text-gray-600 text-sm">Growing residential and business areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">South Plano</h4>
+              <p class="text-gray-600 text-sm">Mixed-use development areas</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h4 class="font-semibold text-gray-900 mb-3">Central Plano</h4>
+              <p class="text-gray-600 text-sm">Professional offices and retail centers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plano Climate Impact -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Plano's Climate Impact on Cleaning Needs
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Summer Heat (May-September)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Extreme temperatures exceeding 100°F</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Increased corporate facility maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Air conditioning system maintenance</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Enhanced sanitization protocols</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Winter Challenges (December-February)</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Rapid temperature swings</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Corporate debris tracking</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Indoor air quality management</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Preventive maintenance schedules</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Major Plano Service Locations -->
+    <section class="py-16" style="background-color: #faf8f4;">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Major Plano Service Locations
+          </h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Building className="h-5 w-5 text-brand-gold mr-2" />
+                Corporate & Office Centers
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Legacy West corporate campus</li>
+                <li>Plano business district</li>
+                <li>Fortune 500 headquarters</li>
+                <li>Tech company offices</li>
+                <li>Executive office buildings</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Heart className="h-5 w-5 text-brand-gold mr-2" />
+                Healthcare Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Plano Medical District</li>
+                <li>Medical office buildings</li>
+                <li>Dental offices and clinics</li>
+                <li>Specialty medical facilities</li>
+                <li>Healthcare administration</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <ShoppingBag className="h-5 w-5 text-brand-gold mr-2" />
+                Retail & Entertainment
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Shops at Legacy</li>
+                <li>Legacy West retail</li>
+                <li>Shopping centers</li>
+                <li>Entertainment venues</li>
+                <li>Restaurant facilities</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <GraduationCap className="h-5 w-5 text-brand-gold mr-2" />
+                Educational Institutions
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Plano ISD schools</li>
+                <li>Collin College campuses</li>
+                <li>Private schools</li>
+                <li>Training centers</li>
+                <li>Corporate learning facilities</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Church className="h-5 w-5 text-brand-gold mr-2" />
+                Religious Facilities
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Community churches</li>
+                <li>Religious centers</li>
+                <li>Synagogues and mosques</li>
+                <li>Religious schools</li>
+                <li>Fellowship halls</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <Car className="h-5 w-5 text-brand-gold mr-2" />
+                Government & Public
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>Plano City Hall</li>
+                <li>Plano Public Library</li>
+                <li>Community centers</li>
+                <li>Public works facilities</li>
+                <li>Recreation centers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plano Cleaning Programs -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Plano Cleaning Programs
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Many Plano businesses depend on our comprehensive cleaning services
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Scheduled Cleaning Programs</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Daily, weekly, or monthly schedules</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Priority emergency response</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Volume pricing discounts</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Dedicated cleaning teams</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Customized Service Plans</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Flexible scheduling options</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Specialized cleaning protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Monthly service reports</span>
+                </li>
+                <li class="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+                  <span>24/7 emergency support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plano Cleaning Expertise -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Plano Cleaning Expertise
+          </h2>
+          <p class="text-lg text-gray-700 mb-8 text-center">
+            Our cleaning teams understand Plano's unique business environments
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Corporate & Tech</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Corporate campus cleaning</li>
+                <li>• Tech company maintenance</li>
+                <li>• Executive office standards</li>
+                <li>• Conference room protocols</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Medical & Healthcare</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Medical facility cleaning</li>
+                <li>• Hospital cleaning standards</li>
+                <li>• Dental office protocols</li>
+                <li>• Medical equipment care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Retail & Entertainment</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• Shopping center maintenance</li>
+                <li>• Retail store cleaning</li>
+                <li>• Entertainment venue protocols</li>
+                <li>• Restaurant facility care</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Educational & Religious</h4>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li>• School facility cleaning</li>
+                <li>• Campus maintenance protocols</li>
+                <li>• Church and synagogue care</li>
+                <li>• Daycare facility standards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Response Section -->
+    <section class="py-16">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-gray-900 mb-6">Need Cleaning Help in Plano?</h2>
-          <p class="text-xl text-gray-600 mb-8">Get a quick quote or call for emergency availability.</p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" class="inline-flex items-center px-8 py-4 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">Get Your Free Quote</a>
-            <a href="tel:817-993-9993" class="inline-flex items-center px-8 py-4 border-2 border-brand-gold text-brand-gold rounded-lg font-semibold hover:bg-brand-gold hover:text-white transition-colors">Call (817) 993-9993</a>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Fast Response When You Need It
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            When your Plano business needs immediate cleaning attention, we're here to help. 
+            Fast response - call for current availability.
+          </p>
+          <div class="bg-white rounded-lg p-8 shadow-sm">
+            <div class="flex items-center justify-center mb-4">
+              <Clock className="h-8 w-8 text-brand-gold mr-3" />
+              <span class="text-2xl font-semibold text-gray-900">24/7 Emergency Service</span>
+            </div>
+            <p class="text-gray-700 mb-6">
+              Whether it's an unexpected event, emergency cleanup, or last-minute schedule changes, 
+              our Plano cleaning team is ready to respond quickly to keep our clients business running smoothly.
+            </p>
+            <a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+              Get Your Free Quote
+            </a>
           </div>
         </div>
       </div>

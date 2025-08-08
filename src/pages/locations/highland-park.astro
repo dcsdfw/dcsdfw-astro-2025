@@ -2,7 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
+import ScrollToTop from '../../components/ScrollToTop';
+import { MapPin, Clock, Users, CheckCircle, Phone, Building, Car, ShoppingBag, Heart, GraduationCap, Church } from 'lucide-react';
 ---
 
 <Layout title="Highland Park Commercial Cleaning Services | Dream Cleaned">
@@ -40,7 +41,7 @@ import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
 						</h1>
 						
 						<p class="text-lg md:text-xl text-gray-600 mb-8 animate-fade-in delay-75 text-balance">
-							From office buildings to retail spaces, we keep your Highland Park workspace pristine and welcoming.
+							From Highland Park Village to luxury boutiques, we keep Highland Park businesses spotless and professional. Trusted by local Highland Park companies for reliability and excellence.
 						</p>
 						
 						<div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-100">
@@ -102,40 +103,50 @@ import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
 			<!-- Coverage Areas -->
 			<section class="py-16 bg-gray-50">
 				<div class="container mx-auto px-6">
-					<div class="max-w-4xl mx-auto text-center">
-						<h2 class="text-3xl font-bold text-gray-900 mb-6">
-							Highland Park Coverage Areas
+					<div class="max-w-6xl mx-auto">
+						<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+							Emergency Coverage Throughout Highland Park
 						</h2>
-						<p class="text-lg text-gray-700 mb-12">
-							We provide comprehensive cleaning services throughout Highland Park and surrounding areas:
+						<p class="text-xl text-gray-600 mb-12 text-center">
+							Our cleaning teams cover every corner of Highland Park and surrounding areas
 						</p>
-						<div class="grid md:grid-cols-3 gap-6">
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h3 class="text-xl font-semibold text-gray-900 mb-4">Highland Park Village</h3>
-								<ul class="space-y-2 text-gray-700">
-									<li>• Luxury retail stores</li>
-									<li>• High-end boutiques</li>
-									<li>• Fine dining establishments</li>
-									<li>• Professional offices</li>
-								</ul>
+						
+						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">Highland Park Village</h4>
+								<p class="text-gray-600 text-sm">Luxury retail and dining district</p>
 							</div>
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h3 class="text-xl font-semibold text-gray-900 mb-4">Knox-Henderson Area</h3>
-								<ul class="space-y-2 text-gray-700">
-									<li>• Specialty retail shops</li>
-									<li>• Medical facilities</li>
-									<li>• Financial institutions</li>
-									<li>• Professional services</li>
-								</ul>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">Knox-Henderson Area</h4>
+								<p class="text-gray-600 text-sm">Specialty retail and medical facilities</p>
 							</div>
-							<div class="bg-white p-6 rounded-lg shadow-md">
-								<h3 class="text-xl font-semibold text-gray-900 mb-4">Oak Lawn Corridor</h3>
-								<ul class="space-y-2 text-gray-700">
-									<li>• Upscale businesses</li>
-									<li>• Professional offices</li>
-									<li>• Medical practices</li>
-									<li>• Specialty services</li>
-								</ul>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">Oak Lawn Corridor</h4>
+								<p class="text-gray-600 text-sm">Upscale businesses and professional offices</p>
+							</div>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">North Highland Park</h4>
+								<p class="text-gray-600 text-sm">Residential and commercial mix</p>
+							</div>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">South Highland Park</h4>
+								<p class="text-gray-600 text-sm">Retail and service businesses</p>
+							</div>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">East Highland Park</h4>
+								<p class="text-gray-600 text-sm">Professional offices and retail</p>
+							</div>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">West Highland Park</h4>
+								<p class="text-gray-600 text-sm">Luxury boutiques and services</p>
+							</div>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">Central Highland Park</h4>
+								<p class="text-gray-600 text-sm">Mixed-use development areas</p>
+							</div>
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h4 class="font-semibold text-gray-900 mb-3">Highland Park Medical District</h4>
+								<p class="text-gray-600 text-sm">Healthcare and medical facilities</p>
 							</div>
 						</div>
 					</div>
@@ -146,32 +157,50 @@ import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
 			<section class="py-16">
 				<div class="container mx-auto px-6">
 					<div class="max-w-4xl mx-auto">
-						<h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">
-							Highland Park's Climate & Cleaning Considerations
+						<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+							Highland Park's Climate Impact on Cleaning Needs
 						</h2>
 						<div class="grid md:grid-cols-2 gap-8">
 							<div>
-								<h3 class="text-xl font-semibold text-gray-900 mb-4">Seasonal Challenges</h3>
-								<p class="text-gray-700 mb-4">
-									Highland Park's humid subtropical climate presents unique cleaning challenges. Our specialized approach addresses:
-								</p>
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Summer Heat (May-September)</h3>
 								<ul class="space-y-2 text-gray-700">
-									<li>• High humidity management</li>
-									<li>• Pollen and allergen control</li>
-									<li>• Seasonal weather adaptation</li>
-									<li>• Indoor air quality maintenance</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Extreme temperatures exceeding 100°F</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>High humidity levels affecting indoor air quality</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Increased dust and pollen accumulation</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>More frequent HVAC system maintenance needs</span>
+									</li>
 								</ul>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold text-gray-900 mb-4">Our Solutions</h3>
-								<p class="text-gray-700 mb-4">
-									We implement climate-specific cleaning protocols to ensure optimal results year-round:
-								</p>
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Winter Conditions (December-February)</h3>
 								<ul class="space-y-2 text-gray-700">
-									<li>• Humidity-resistant cleaning methods</li>
-									<li>• HEPA filtration systems</li>
-									<li>• Climate-appropriate products</li>
-									<li>• Preventive maintenance programs</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Cold snaps and occasional ice storms</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Salt and debris tracking from parking areas</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Reduced natural ventilation needs</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Heating system maintenance requirements</span>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -179,102 +208,241 @@ import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
 				</div>
 			</section>
 
-			<!-- Services -->
-			<section class="py-16 bg-brand-dark text-white">
+			<!-- Major Highland Park Service Locations -->
+			<section class="py-16" style="background-color: #faf8f4;">
 				<div class="container mx-auto px-6">
-					<div class="max-w-4xl mx-auto text-center">
-						<h2 class="text-3xl font-bold mb-6">
-							Comprehensive Highland Park Cleaning Services
+					<div class="max-w-6xl mx-auto">
+						<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+							Major Highland Park Service Locations
 						</h2>
-						<p class="text-xl text-white/90 mb-12">
-							From daily maintenance to deep cleaning, we provide all the services Highland Park businesses need to maintain pristine workspaces.
-						</p>
-						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Luxury Retail Cleaning</h3>
-								<p class="text-white/80">
-									Specialized cleaning for high-end retail spaces, display areas, and luxury environments.
-								</p>
+						
+						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+									<ShoppingBag className="h-5 w-5 text-brand-gold mr-2" />
+									Luxury Retail & Shopping
+								</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>Highland Park Village</li>
+									<li>Luxury boutiques</li>
+									<li>High-end retail stores</li>
+									<li>Fine dining establishments</li>
+									<li>Specialty shops</li>
+								</ul>
 							</div>
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Office Cleaning</h3>
-								<p class="text-white/80">
-									Comprehensive office cleaning including workstations, common areas, and restrooms.
-								</p>
+							
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+									<Building className="h-5 w-5 text-brand-gold mr-2" />
+									Corporate & Office Centers
+								</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>Professional service firms</li>
+									<li>Executive office buildings</li>
+									<li>Business service centers</li>
+									<li>Technology companies</li>
+									<li>Consulting firms</li>
+								</ul>
 							</div>
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Medical Facility Cleaning</h3>
-								<p class="text-white/80">
-									Healthcare-grade cleaning protocols for medical offices and healthcare facilities.
-								</p>
+							
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+									<Heart className="h-5 w-5 text-brand-gold mr-2" />
+									Healthcare Facilities
+								</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>Medical office buildings</li>
+									<li>Dental offices and clinics</li>
+									<li>Specialty medical facilities</li>
+									<li>Healthcare administration</li>
+									<li>Medical equipment care</li>
+								</ul>
 							</div>
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Floor Care</h3>
-								<p class="text-white/80">
-									Professional floor maintenance including carpet cleaning and hard surface care.
-								</p>
+							
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+									<GraduationCap className="h-5 w-5 text-brand-gold mr-2" />
+									Educational Institutions
+								</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>Private schools</li>
+									<li>Daycare facilities</li>
+									<li>Training centers</li>
+									<li>Educational support facilities</li>
+									<li>Learning centers</li>
+								</ul>
 							</div>
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Window Cleaning</h3>
-								<p class="text-white/80">
-									Interior and exterior window cleaning for clear, professional appearances.
-								</p>
+							
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+									<Church className="h-5 w-5 text-brand-gold mr-2" />
+									Religious Facilities
+								</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>Community churches</li>
+									<li>Religious centers</li>
+									<li>Synagogues and mosques</li>
+									<li>Religious schools</li>
+									<li>Fellowship halls</li>
+								</ul>
 							</div>
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Specialized Services</h3>
-								<p class="text-white/80">
-									Custom cleaning solutions for unique Highland Park business requirements.
-								</p>
+							
+							<div class="bg-white rounded-lg p-6 shadow-sm">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+									<Car className="h-5 w-5 text-brand-gold mr-2" />
+									Government & Public
+								</h3>
+								<ul class="space-y-2 text-gray-700">
+									<li>Community centers</li>
+									<li>Public works facilities</li>
+									<li>Recreation centers</li>
+									<li>Public service offices</li>
+									<li>Civic facilities</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Emergency Services -->
-			<section class="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
+			<!-- Highland Park Cleaning Programs -->
+			<section class="py-16">
 				<div class="container mx-auto px-6">
-					<div class="max-w-4xl mx-auto text-center">
-						<h2 class="text-3xl font-bold mb-6">
-							24/7 Emergency Cleaning Services
+					<div class="max-w-4xl mx-auto">
+						<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+							Highland Park Cleaning Programs
 						</h2>
-						<p class="text-xl text-white/90 mb-8">
-							When unexpected cleaning emergencies arise in Highland Park, we're here to help. Available 24/7 for urgent cleaning needs.
+						<p class="text-lg text-gray-700 mb-8 text-center">
+							Many Highland Park businesses depend on our comprehensive cleaning services
 						</p>
-						<div class="grid md:grid-cols-2 gap-6">
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">Emergency Response</h3>
-								<p class="text-white/80">
-									Rapid response cleaning services for accidents, spills, and unexpected messes.
-								</p>
+						
+						<div class="grid md:grid-cols-2 gap-8">
+							<div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Scheduled Cleaning Programs</h3>
+								<ul class="space-y-3 text-gray-700">
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Daily, weekly, or monthly schedules</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Priority emergency response</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Volume pricing discounts</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Dedicated cleaning teams</span>
+									</li>
+								</ul>
 							</div>
-							<div class="bg-white/10 p-6 rounded-lg">
-								<h3 class="text-xl font-semibold mb-4">After-Hours Service</h3>
-								<p class="text-white/80">
-									Flexible scheduling for businesses that need cleaning outside regular hours.
-								</p>
+							
+							<div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+								<h3 class="text-xl font-semibold text-gray-900 mb-4">Customized Service Plans</h3>
+								<ul class="space-y-3 text-gray-700">
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Flexible scheduling options</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Specialized cleaning protocols</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>Monthly service reports</span>
+									</li>
+									<li class="flex items-start">
+										<CheckCircle className="h-4 w-4 text-brand-gold mr-2 mt-0.5 flex-shrink-0" />
+										<span>24/7 emergency support</span>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Contact Section -->
+			<!-- Highland Park Cleaning Expertise -->
 			<section class="py-16 bg-gray-50">
+				<div class="container mx-auto px-6">
+					<div class="max-w-4xl mx-auto">
+						<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+							Highland Park Cleaning Expertise
+						</h2>
+						<p class="text-lg text-gray-700 mb-8 text-center">
+							Our cleaning teams understand Highland Park's unique business environments
+						</p>
+						
+						<div class="grid md:grid-cols-2 gap-6">
+							<div class="bg-white rounded-lg p-6">
+								<h4 class="font-semibold text-gray-900 mb-3">Luxury Retail & Shopping</h4>
+								<ul class="space-y-2 text-gray-600 text-sm">
+									<li>• Highland Park Village maintenance</li>
+									<li>• Luxury boutique cleaning</li>
+									<li>• High-end retail protocols</li>
+									<li>• Fine dining facility care</li>
+								</ul>
+							</div>
+							
+							<div class="bg-white rounded-lg p-6">
+								<h4 class="font-semibold text-gray-900 mb-3">Medical & Healthcare</h4>
+								<ul class="space-y-2 text-gray-600 text-sm">
+									<li>• Medical facility cleaning</li>
+									<li>• Hospital cleaning standards</li>
+									<li>• Dental office protocols</li>
+									<li>• Medical equipment care</li>
+								</ul>
+							</div>
+							
+							<div class="bg-white rounded-lg p-6">
+								<h4 class="font-semibold text-gray-900 mb-3">Office & Corporate</h4>
+								<ul class="space-y-2 text-gray-600 text-sm">
+									<li>• Office building maintenance</li>
+									<li>• Corporate campus cleaning</li>
+									<li>• Executive office standards</li>
+									<li>• Conference room protocols</li>
+								</ul>
+							</div>
+							
+							<div class="bg-white rounded-lg p-6">
+								<h4 class="font-semibold text-gray-900 mb-3">Educational & Religious</h4>
+								<ul class="space-y-2 text-gray-600 text-sm">
+									<li>• School facility cleaning</li>
+									<li>• Campus maintenance protocols</li>
+									<li>• Church and synagogue care</li>
+									<li>• Daycare facility standards</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Emergency Response Section -->
+			<section class="py-16">
 				<div class="container mx-auto px-6">
 					<div class="max-w-4xl mx-auto text-center">
 						<h2 class="text-3xl font-bold text-gray-900 mb-6">
-							Ready to Experience Highland Park's Premier Cleaning Service?
+							Fast Response When You Need It
 						</h2>
-						<p class="text-lg text-gray-700 mb-8">
-							Contact us today for a free consultation and customized cleaning plan for your Highland Park business.
+						<p class="text-xl text-gray-600 mb-8">
+							When your Highland Park business needs immediate cleaning attention, we're here to help. 
+							Fast response - call for current availability.
 						</p>
-						<div class="flex flex-col sm:flex-row gap-4 justify-center">
-							<a href="tel:8179939993" class="bg-brand-gold text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
-								Call 817-993-9993
-							</a>
-							<a href="mailto:hello@dcsdfw.com" class="bg-brand-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-dark/90 transition-colors">
-								Email Us
+						<div class="bg-white rounded-lg p-8 shadow-sm">
+							<div class="flex items-center justify-center mb-4">
+								<Clock className="h-8 w-8 text-brand-gold mr-3" />
+								<span class="text-2xl font-semibold text-gray-900">24/7 Emergency Service</span>
+							</div>
+							<p class="text-gray-700 mb-6">
+								Whether it's an unexpected event, emergency cleanup, or last-minute schedule changes, 
+								our Highland Park cleaning team is ready to respond quickly to keep our clients business running smoothly.
+							</p>
+							<a href="#contact" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg font-semibold hover:bg-brand-gold/90 transition-colors">
+								Get Your Free Quote
 							</a>
 						</div>
 					</div>
@@ -282,5 +450,6 @@ import { CheckCircle, MapPin, Clock, Users } from 'lucide-react';
 			</section>
 		</main>
 		<Footer client:load />
+		<ScrollToTop client:load />
 	</div>
 </Layout> 
